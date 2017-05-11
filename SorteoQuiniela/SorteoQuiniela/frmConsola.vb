@@ -628,6 +628,7 @@ Public Class frmConsola
     End Sub
 
     Private Sub txtLetra4_TextChanged(sender As Object, e As EventArgs) Handles txtLetra4.TextChanged
+        'INGRESO LA ULTIMA LETRA, Y PREPARO LA LISTA POCEADA ELIMINANDO LOS REPETIDOS
         Me.ordenLetras = txtLetra1.Text & txtLetra2.Text & txtLetra3.Text & txtLetra4.Text
 
         Me.txtLetrasOrdenadas.Text = OrdenarLetras(ordenLetras)
@@ -669,7 +670,7 @@ Public Class frmConsola
             For c = 0 To repetidos.GetUpperBound(0)
                 If Not IsNothing(repetidos(c, 0)) Then
 
-                    grillaSorteo.lblRepetidos.Text = grillaSorteo.lblRepetidos.Text & "-" & repetidos(c, 0).ToString() & " - "
+                    grillaSorteo.lblRepetidos.Text = grillaSorteo.lblRepetidos.Text & "-" & repetidos(c, 0).ToString()
 
                 End If
             Next
