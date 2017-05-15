@@ -758,7 +758,17 @@ Public Class frmConsola
                 txtDecenaPoceada.Text = ""
                 txtUnidadPoceada.Text = ""
                 Me.txtDecenaPoceada.Focus()
+                'GUARDO INFORMACION DE POCEADA
+                If CantRepetidosPoseada = 0 Then
+                    Using escritor2 As StreamWriter = New StreamWriter(nombreArchivo, True)
+                        escritor2.Write("poceada")
+                        For index = 1 To posiciones.GetUpperBound(0) + 1
 
+                            escritor2.Write(index & " - " & repetidos(index - 1, 0).ToString())
+                        Next
+
+                    End Using
+                End If
             End If
         Else
             MessageBox.Show("Sorteo finalizado", "FIN DEL SORTEO ")
