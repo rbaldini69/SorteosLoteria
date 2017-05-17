@@ -633,6 +633,10 @@ Public Class frmConsola
 
         Me.txtLetrasOrdenadas.Text = OrdenarLetras(ordenLetras)
         grillaSorteo.lblLetras.Text = txtLetrasOrdenadas.Text
+        Using escritor1 As StreamWriter = New StreamWriter(nombreArchivo, True)
+            escritor1.Write("LETRAS" & vbCrLf)
+            escritor1.Write(txtLetra1.Text & " - " & txtLetra2.Text & " - " & txtLetra3.Text & " - " & txtLetra4.Text & vbCrLf)
+        End Using
         If MessageBox.Show("Continuar??", "Continuar Sorteos", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
             'grillaSorteo.lblLetras.Location = New Point(grillaSorteo.lblLetras.Location.X - 320, grillaSorteo.lblLetras.Location.Y - 50)
             'grillaSorteo.IsMdiContainer = True
@@ -761,13 +765,14 @@ Public Class frmConsola
                 'GUARDO INFORMACION DE POCEADA
                 If CantRepetidosPoseada = 0 Then
                     Using escritor2 As StreamWriter = New StreamWriter(nombreArchivo, True)
-                        escritor2.Write("poceada")
-                        For index = 1 To posiciones.GetUpperBound(0) + 1
+                        escritor2.Write("POCEADA" & vbCrLf)
+                        For index = 1 To arrayTempPoseada.GetUpperBound(0) + 1
 
-                            escritor2.Write(index & " - " & repetidos(index - 1, 0).ToString())
+                            escritor2.Write(index & " - " & arrayTempPoseada(index - 1).ToString() & vbCrLf)
                         Next
 
                     End Using
+                    'MsgBox("archivo generado", "se genero archivo txt")
                 End If
             End If
         Else
