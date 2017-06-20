@@ -70,7 +70,7 @@ Partial Class frmConsola
         Me.txtUnidadPoceada = New System.Windows.Forms.TextBox()
         Me.txtUbicacionPoceada = New System.Windows.Forms.TextBox()
         Me.txtNumSorteadoPoceada = New System.Windows.Forms.TextBox()
-        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.btnProcesarDatos = New System.Windows.Forms.Button()
         Me.gbxDatosSorteo.SuspendLayout()
         Me.gbxNumerosSorteados.SuspendLayout()
         Me.gbxLetras.SuspendLayout()
@@ -501,14 +501,21 @@ Partial Class frmConsola
         Me.txtNumSorteadoPoceada.TabIndex = 8
         Me.txtNumSorteadoPoceada.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Timer3
+        'btnProcesarDatos
         '
+        Me.btnProcesarDatos.Location = New System.Drawing.Point(54, 12)
+        Me.btnProcesarDatos.Name = "btnProcesarDatos"
+        Me.btnProcesarDatos.Size = New System.Drawing.Size(118, 23)
+        Me.btnProcesarDatos.TabIndex = 32
+        Me.btnProcesarDatos.Text = "Guardar Como"
+        Me.btnProcesarDatos.UseVisualStyleBackColor = True
         '
         'frmConsola
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(874, 426)
+        Me.Controls.Add(Me.btnProcesarDatos)
         Me.Controls.Add(Me.gbxPoceada)
         Me.Controls.Add(Me.gbxLetras)
         Me.Controls.Add(Me.txtDdeM)
@@ -574,7 +581,7 @@ Partial Class frmConsola
     Friend WithEvents txtUnidadPoceada As TextBox
     Friend WithEvents txtUbicacionPoceada As TextBox
     Friend WithEvents txtNumSorteadoPoceada As TextBox
-    Friend WithEvents Timer3 As Timer
     Friend WithEvents Label5 As Label
     Friend WithEvents txtRepetido As TextBox
+    Friend WithEvents btnProcesarDatos As Button
 End Class

@@ -41,6 +41,8 @@
     <DocumentationFile>SorteoQuiniela.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <UseVSHostingProcess>true</UseVSHostingProcess>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -75,6 +77,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>true</DelaySign>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -136,6 +144,12 @@
     <Compile Include="poseada.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="procesamientoDeDatos.Designer.vb">
+      <DependentUpon>procesamientoDeDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="procesamientoDeDatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmConsola.resx">
@@ -153,8 +167,12 @@
     <EmbeddedResource Include="poseada.resx">
       <DependentUpon>poseada.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="procesamientoDeDatos.resx">
+      <DependentUpon>procesamientoDeDatos.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

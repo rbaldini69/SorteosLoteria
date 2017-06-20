@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-
+Imports System.ComponentModel
 Public Class frmConsola
 
     Dim posiciones(19) As String
@@ -24,7 +24,7 @@ Public Class frmConsola
     Dim ordenLetras As String
     Dim CantRepetidosPoseada As Integer = 0
     Dim arrayTempPoseada() As String
-
+    Dim guardarArchivo As New SaveFileDialog
     Dim repetidos(19, 0) As String
 
 
@@ -254,7 +254,7 @@ Public Class frmConsola
 #Region "boton aceptar"
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
-        nombreArchivo = "c:/sorteos/SN" & Me.txtNumSorteo.Text & ".txt"
+        'nombreArchivo = "c:/sorteos/SN" & Me.txtNumSorteo.Text & ".txt"
 
         For Each ctl As Control In Me.gbxNumerosSorteados.Controls
 
@@ -265,7 +265,9 @@ Public Class frmConsola
             End If
 
         Next
-
+        If nombreArchivo = "" Then
+            guardarArchivoNuevo()
+        End If
         auxUbicacion = "textbox" & Me.Ubicacion.Text
         If Me.Ubicacion.Text > 0 And Me.Ubicacion.Text <= 20 Then
             If grillaSorteo.Controls(auxUbicacion).Text = "" Then
@@ -294,7 +296,7 @@ Public Class frmConsola
 
                     Using escritor As StreamWriter = New StreamWriter(nombreArchivo, False)
                         escritor.Write("Sorteo N°: " & Me.txtNumSorteo.Text & vbCrLf & "Fecha: " & dtpFechaSorteo.Text &
-                            " Hora Inicio: " & HoraInicio & vbCrLf)
+                                " Hora Inicio: " & HoraInicio & vbCrLf)
                         'RELLENO EL LISTBOX Y SOBRESCRIBO EL ARCHIVO
                         For index = 1 To posiciones.GetUpperBound(0) + 1
                             ListBox1.Items.Add(index & " " & posiciones(index - 1))
@@ -325,7 +327,7 @@ Public Class frmConsola
                     ListBox1.Items.Clear()
                     Using escritor As StreamWriter = New StreamWriter(nombreArchivo, False)
                         escritor.Write("Sorteo N°: " & Me.txtNumSorteo.Text & vbCrLf & "Fecha: " & dtpFechaSorteo.Text &
-                            " Hora Inicio: " & HoraInicio & vbCrLf)
+                                " Hora Inicio: " & HoraInicio & vbCrLf)
                         For index = 1 To posiciones.GetUpperBound(0) + 1
                             ListBox1.Items.Add(index & " " & posiciones(index - 1))
                             escritor.WriteLine(index & " " & posiciones(index - 1))
@@ -385,10 +387,10 @@ Public Class frmConsola
             Next
 
             Me.gbxLetras.Visible = True
-                    Me.txtLetra1.Focus()
-                Else
+            Me.txtLetra1.Focus()
+        Else
 
-                End If
+        End If
 
         sorteosRestantes = 0
     End Sub
@@ -439,7 +441,7 @@ Public Class frmConsola
 
     Private Sub txtUdeMil_TextChanged_1(sender As Object, e As EventArgs) Handles txtUnidad.TextChanged
         Me.txtNumSorteado.Text = Me.txtUdeMil.Text & Me.txtCentena.Text & Me.txtDecena.Text & Me.txtUnidad.Text
-        Me.Ubicacion.Focus()
+        Ubicacion.Focus()
     End Sub
 
     Private Sub txtNumSorteado_TextChanged(sender As Object, e As EventArgs) Handles txtNumSorteado.TextChanged
@@ -805,7 +807,7 @@ Public Class frmConsola
         Return primero
     End Function
 
-    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -836,11 +838,28 @@ Public Class frmConsola
 
     Private Sub txtNumSorteo_TextChanged(sender As Object, e As EventArgs) Handles txtNumSorteo.TextChanged
         grillaSorteo.lblDatosSorteo.Text = "L O T E R I A   N A C I O N A L - S O R T E O  N° " _
-           & txtNumSorteo.Text
+               & txtNumSorteo.Text
         grillaSorteo.Timer2.Enabled = True
     End Sub
 
     Private Sub txtUbicacionPoceada_TextChanged(sender As Object, e As EventArgs) Handles txtUbicacionPoceada.TextChanged
 
     End Sub
+
+    Private Sub btnProcesarDatos_Click(sender As Object, e As EventArgs) Handles btnProcesarDatos.Click
+        guardarArchivoNuevo()
+    End Sub
+    Sub guardarArchivoNuevo()
+        guardarArchivo.Filter = "Archivos de texto | *.txt"
+        guardarArchivo.FileName = "Sorteo N°" & Me.txtNumSorteo.Text
+        If guardarArchivo.ShowDialog() = DialogResult.OK Then
+
+            'guardarArchivo.FileName = Me.txtNumSorteo.Text & ".txt"
+
+            nombreArchivo = guardarArchivo.FileName
+
+            File.WriteAllText(nombreArchivo, "Archivo generado sin datos")
+        End If
+    End Sub
 End Class
+
