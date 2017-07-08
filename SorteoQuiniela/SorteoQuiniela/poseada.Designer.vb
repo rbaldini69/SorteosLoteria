@@ -22,7 +22,6 @@ Partial Class poceada
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.lblOrden10 = New System.Windows.Forms.Label()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
@@ -64,18 +63,10 @@ Partial Class poceada
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.grbPoceada = New System.Windows.Forms.GroupBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.grbPoceada.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.SorteoQuiniela.My.Resources.Resources.maqueta_fondo_y_logo
-        Me.PictureBox1.Location = New System.Drawing.Point(-162, -1)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(441, 627)
-        Me.PictureBox1.TabIndex = 90
-        Me.PictureBox1.TabStop = False
         '
         'TextBox11
         '
@@ -559,7 +550,8 @@ Partial Class poceada
         '
         'grbPoceada
         '
-        Me.grbPoceada.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grbPoceada.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(209, Byte), Integer))
+        Me.grbPoceada.Controls.Add(Me.PictureBox1)
         Me.grbPoceada.Controls.Add(Me.TextBox6)
         Me.grbPoceada.Controls.Add(Me.TextBox3)
         Me.grbPoceada.Controls.Add(Me.TextBox2)
@@ -600,13 +592,23 @@ Partial Class poceada
         Me.grbPoceada.Controls.Add(Me.TextBox12)
         Me.grbPoceada.Controls.Add(Me.lblOrden10)
         Me.grbPoceada.Controls.Add(Me.TextBox11)
-        Me.grbPoceada.Controls.Add(Me.PictureBox1)
         Me.grbPoceada.ForeColor = System.Drawing.Color.Transparent
-        Me.grbPoceada.Location = New System.Drawing.Point(0, -6)
+        Me.grbPoceada.Location = New System.Drawing.Point(-3, -6)
         Me.grbPoceada.Name = "grbPoceada"
-        Me.grbPoceada.Size = New System.Drawing.Size(285, 584)
+        Me.grbPoceada.Size = New System.Drawing.Size(311, 584)
         Me.grbPoceada.TabIndex = 90
         Me.grbPoceada.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(131, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(209, Byte), Integer))
+        Me.PictureBox1.Image = Global.SorteoQuiniela.My.Resources.Resources.logoLotbaFondoColorHorizontal
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(204, 90)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 90
+        Me.PictureBox1.TabStop = False
         '
         'poceada
         '
@@ -618,14 +620,12 @@ Partial Class poceada
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "poceada"
         Me.Text = "poseada"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grbPoceada.ResumeLayout(False)
         Me.grbPoceada.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents lblOrden10 As Label
     Friend WithEvents TextBox12 As TextBox
@@ -667,4 +667,5 @@ Partial Class poceada
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents grbPoceada As GroupBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

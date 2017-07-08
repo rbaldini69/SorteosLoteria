@@ -14,7 +14,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\rbald\Desktop\3-5 sorteoQuiniela\</PublishUrl>
+    <PublishUrl>C:\Users\rbald\Desktop\sorteoQuiniela VPrueba1-7\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -25,7 +25,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -293,6 +293,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo bolilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoLotba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoLotbaFondoBlancoHorizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoLotbaFondoBlancoVertical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoLotbaFondoBlancoVertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoLotbaFondoColorHorizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoLotbaFondoColorVertical.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

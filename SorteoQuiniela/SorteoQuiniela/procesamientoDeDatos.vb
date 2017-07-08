@@ -68,7 +68,7 @@ Public Class procesamientoDeDatos
             ProgressBar1.Value = 0
 
             '    
-            MsgBox("fin de lectura de archivo, cant. de registros: " & cantRegistros)
+            'MsgBox("fin de lectura de archivo, cant. de registros: " & cantRegistros)
             lector.Close()
             BackgroundWorker1.RunWorkerAsync()
             BackgroundWorker1.WorkerReportsProgress = True
