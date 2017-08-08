@@ -1,5 +1,6 @@
 ﻿Public Class grillaSorteo
     Private Sub grillaSorteo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        escalar1()
 
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -213,5 +214,27 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
+    End Sub
+    Sub escalar1()
+        Dim f As New System.Drawing.SizeF
+        f.Height = ((100 / 860) * Me.Height) / 100
+        f.Width = ((100 / 1366) * Me.Width) / 100
+        For Each ctrl As Control In Me.Controls
+            ctrl.Scale(f)
+            Try
+                'controlo el error por si no tiene propiedad font
+                ctrl.Font = New Font(ctrl.Font.OriginalFontName, ctrl.Font.Size * f.Height, ctrl.Font.Style, GraphicsUnit.Point)
+            Catch ex As Exception
+            End Try
+            If (TypeOf (ctrl) Is GroupBox) Then 'si el control es un groupbox escalo sus controles internos
+                For Each ctrlAUX As Control In ctrl.Controls
+                    ctrlAUX.Scale(f)
+                    Try
+                        ctrlAUX.Font = New Font(ctrlAUX.Font.OriginalFontName, ctrlAUX.Font.Size * f.Height, ctrlAUX.Font.Style, GraphicsUnit.Point)
+                    Catch ex As Exception
+                    End Try
+                Next
+            End If
+        Next
     End Sub
 End Class
