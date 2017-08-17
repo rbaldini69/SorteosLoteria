@@ -172,6 +172,7 @@ Public Class frmConsola
 
     End Sub
     Private Sub NuevaExtraccion()
+
         For Each ctl As Control In Me.gbxNumerosSorteados.Controls
 
             If TypeOf (ctl) Is TextBox Then
@@ -212,6 +213,7 @@ Public Class frmConsola
             grillaSorteo.Controls("lblRes" & index).Visible = False
 
         Next
+        'grillaSorteo.escalar1()
 
     End Sub
 #End Region
