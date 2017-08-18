@@ -218,13 +218,13 @@
     Sub escalar1()
 
         Dim f As New System.Drawing.SizeF
-        f.Height = ((100 / 860) * Me.Height) / 100
+        f.Height = ((100 / 768) * Me.Height) / 100
         f.Width = ((100 / 1366) * Me.Width) / 100
         For Each ctrl As Control In Me.Controls
             ctrl.Scale(f)
             Try
                 'controlo el error por si no tiene propiedad font
-                ctrl.Font = New Font(ctrl.Font.OriginalFontName, ctrl.Font.Size * Math.Round(f.Width, 2), ctrl.Font.Style, GraphicsUnit.Point)
+                ctrl.Font = New Font(ctrl.Font.OriginalFontName, Math.Round(ctrl.Font.Size * Math.Round(f.Width, 2), 0) - 2, ctrl.Font.Style, GraphicsUnit.Point)
             Catch ex As Exception
             End Try
             If (TypeOf (ctrl) Is GroupBox) Then 'si el control es un groupbox escalo sus controles internos

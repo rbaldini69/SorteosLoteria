@@ -683,7 +683,7 @@ Public Class frmConsola
                 End If
             Next
             Me.txtRepetido.Text = grillaSorteo.lblRepetidos.Text
-            poceada.Location = New Point(2280, 120) 'posicion en pantalla doble 2180,60
+            poceada.Location = New Point(1100, 120) 'posicion en pantalla doble 2180,60
             MsgBox("cant. repetidos " & CantRepetidosPoseada)
 
             grillaSorteo.lblRepetidos.Visible = True
@@ -829,9 +829,12 @@ Public Class frmConsola
     End Sub
 
     Private Sub txtUnidadPoceada_TextChanged(sender As Object, e As EventArgs) Handles txtUnidadPoceada.TextChanged
+
         Me.txtNumSorteadoPoceada.Text = Me.txtNumSorteadoPoceada.Text & Me.txtUnidadPoceada.Text
-        Me.BtnPoceada.Enabled = True
-        Me.BtnPoceada.Focus()
+            Me.BtnPoceada.Enabled = True
+            Me.BtnPoceada.Focus()
+
+
     End Sub
 
     Private Sub txtNumSorteadoPoceada_TextChanged(sender As Object, e As EventArgs) Handles txtNumSorteadoPoceada.TextChanged
@@ -862,6 +865,19 @@ Public Class frmConsola
 
             File.WriteAllText(nombreArchivo, "Archivo generado sin datos")
         End If
+    End Sub
+
+    Private Sub txtDecenaPoceada_Enter(sender As Object, e As EventArgs) Handles txtDecenaPoceada.Enter
+        Me.txtUnidadPoceada.Text = ""
+    End Sub
+
+    Private Sub txtDecenaPoceada_Click(sender As Object, e As EventArgs) Handles txtDecenaPoceada.Click
+        txtDecenaPoceada.SelectAll()
+    End Sub
+
+    Private Sub txtUnidadPoceada_Enter(sender As Object, e As EventArgs) Handles txtUnidadPoceada.Enter
+        Me.txtUnidadPoceada.Text = ""
+        Me.txtNumSorteadoPoceada.Text = Me.txtDecenaPoceada.Text
     End Sub
 End Class
 

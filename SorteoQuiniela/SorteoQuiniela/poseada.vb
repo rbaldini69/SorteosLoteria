@@ -170,4 +170,8 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub poceada_Enter(sender As Object, e As EventArgs) Handles MyBase.Enter
+
+    End Sub
 End Class
