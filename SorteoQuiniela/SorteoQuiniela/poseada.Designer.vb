@@ -194,9 +194,9 @@ Partial Class poceada
         Me.TextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox16.ForeColor = System.Drawing.Color.Black
-        Me.TextBox16.Location = New System.Drawing.Point(527, 51)
+        Me.TextBox16.Location = New System.Drawing.Point(549, 51)
         Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(80, 61)
+        Me.TextBox16.Size = New System.Drawing.Size(126, 61)
         Me.TextBox16.TabIndex = 75
         Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -423,7 +423,7 @@ Partial Class poceada
         Me.lblOrden16.ForeColor = System.Drawing.Color.Black
         Me.lblOrden16.Location = New System.Drawing.Point(457, 51)
         Me.lblOrden16.Name = "lblOrden16"
-        Me.lblOrden16.Size = New System.Drawing.Size(72, 61)
+        Me.lblOrden16.Size = New System.Drawing.Size(91, 61)
         Me.lblOrden16.TabIndex = 85
         Me.lblOrden16.Text = "16"
         Me.lblOrden16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -605,9 +605,9 @@ Partial Class poceada
         Me.lblRes0.BackColor = System.Drawing.Color.White
         Me.lblRes0.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.lblRes0.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblRes0.Location = New System.Drawing.Point(82, 24)
+        Me.lblRes0.Location = New System.Drawing.Point(549, 23)
         Me.lblRes0.Name = "lblRes0"
-        Me.lblRes0.Size = New System.Drawing.Size(119, 26)
+        Me.lblRes0.Size = New System.Drawing.Size(125, 26)
         Me.lblRes0.TabIndex = 91
         Me.lblRes0.Text = "Resultado"
         Me.lblRes0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -618,9 +618,9 @@ Partial Class poceada
         Me.lblPos0.BackColor = System.Drawing.Color.White
         Me.lblPos0.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.lblPos0.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblPos0.Location = New System.Drawing.Point(6, 24)
+        Me.lblPos0.Location = New System.Drawing.Point(456, 23)
         Me.lblPos0.Name = "lblPos0"
-        Me.lblPos0.Size = New System.Drawing.Size(76, 26)
+        Me.lblPos0.Size = New System.Drawing.Size(91, 26)
         Me.lblPos0.TabIndex = 90
         Me.lblPos0.Text = "Posición"
         Me.lblPos0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter

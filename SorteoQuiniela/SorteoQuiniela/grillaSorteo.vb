@@ -1,4 +1,10 @@
-﻿Public Class grillaSorteo
+﻿Imports System
+Imports System.Runtime.InteropServices
+Public Class grillaSorteo
+    Public f As SizeF
+    Public resolucionCambiada As Boolean = False
+
+
     Private Sub grillaSorteo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         escalar1()
 
@@ -217,25 +223,33 @@
     End Sub
     Sub escalar1()
 
-        Dim f As New System.Drawing.SizeF
-        f.Height = ((100 / 768) * Me.Height) / 100
-        f.Width = ((100 / 1366) * Me.Width) / 100
-        For Each ctrl As Control In Me.Controls
-            ctrl.Scale(f)
-            Try
-                'controlo el error por si no tiene propiedad font
-                ctrl.Font = New Font(ctrl.Font.OriginalFontName, Math.Round(ctrl.Font.Size * Math.Round(f.Width, 2), 0) - 2, ctrl.Font.Style, GraphicsUnit.Point)
-            Catch ex As Exception
-            End Try
-            If (TypeOf (ctrl) Is GroupBox) Then 'si el control es un groupbox escalo sus controles internos
-                For Each ctrlAUX As Control In ctrl.Controls
-                    ctrlAUX.Scale(f)
-                    Try
-                        ctrlAUX.Font = New Font(ctrlAUX.Font.OriginalFontName, ctrlAUX.Font.Size * f.Height, ctrlAUX.Font.Style, GraphicsUnit.Point)
-                    Catch ex As Exception
-                    End Try
-                Next
-            End If
-        Next
+        Dim desktopSize As Size
+        desktopSize = System.Windows.Forms.SystemInformation.PrimaryMonitorSize
+        Dim height As Integer = desktopSize.Height
+        Dim width As Integer = desktopSize.Width
+        If height <> 768 And width <> 1366 Then
+            'Dim f As New System.Drawing.SizeF
+            f.Height = ((100 / 768) * Me.Height) / 100
+            f.Width = ((100 / 1366) * Me.Width) / 100
+            For Each ctrl As Control In Me.Controls
+                ctrl.Scale(f)
+                Try
+                    'controlo el error por si no tiene propiedad font
+                    ctrl.Font = New Font(ctrl.Font.OriginalFontName, Math.Round(ctrl.Font.Size * Math.Round(f.Width, 2), 0), ctrl.Font.Style, GraphicsUnit.Point)
+                Catch ex As Exception
+                End Try
+                If (TypeOf (ctrl) Is GroupBox) Then 'si el control es un groupbox escalo sus controles internos
+                    For Each ctrlAUX As Control In ctrl.Controls
+                        ctrlAUX.Scale(f)
+                        Try
+                            ctrlAUX.Font = New Font(ctrlAUX.Font.OriginalFontName, ctrlAUX.Font.Size * f.Height, ctrlAUX.Font.Style, GraphicsUnit.Point)
+                        Catch ex As Exception
+                        End Try
+                    Next
+                End If
+            Next
+        End If
+        resolucionCambiada = True
+
     End Sub
 End Class

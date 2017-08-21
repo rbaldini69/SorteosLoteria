@@ -95,11 +95,11 @@ Partial Class grillaSorteo
         Me.TextBox1.AcceptsTab = True
         Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(391, 361)
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox1.Location = New System.Drawing.Point(377, 363)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox1.Size = New System.Drawing.Size(120, 67)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox1.Visible = False
@@ -109,11 +109,11 @@ Partial Class grillaSorteo
         Me.TextBox2.AcceptsTab = True
         Me.TextBox2.BackColor = System.Drawing.Color.White
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.Black
-        Me.TextBox2.Location = New System.Drawing.Point(391, 415)
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox2.Location = New System.Drawing.Point(377, 432)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox2.Size = New System.Drawing.Size(120, 67)
         Me.TextBox2.TabIndex = 1
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox2.Visible = False
@@ -123,11 +123,11 @@ Partial Class grillaSorteo
         Me.TextBox3.AcceptsTab = True
         Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.ForeColor = System.Drawing.Color.White
-        Me.TextBox3.Location = New System.Drawing.Point(391, 469)
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox3.Location = New System.Drawing.Point(377, 501)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox3.Size = New System.Drawing.Size(120, 67)
         Me.TextBox3.TabIndex = 2
         Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox3.Visible = False
@@ -137,11 +137,11 @@ Partial Class grillaSorteo
         Me.TextBox4.AcceptsTab = True
         Me.TextBox4.BackColor = System.Drawing.Color.White
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.ForeColor = System.Drawing.Color.Black
-        Me.TextBox4.Location = New System.Drawing.Point(391, 522)
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox4.Location = New System.Drawing.Point(377, 570)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox4.Size = New System.Drawing.Size(120, 67)
         Me.TextBox4.TabIndex = 3
         Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox4.Visible = False
@@ -151,11 +151,11 @@ Partial Class grillaSorteo
         Me.TextBox5.AcceptsTab = True
         Me.TextBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.ForeColor = System.Drawing.Color.White
-        Me.TextBox5.Location = New System.Drawing.Point(391, 575)
+        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox5.Location = New System.Drawing.Point(377, 639)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox5.Size = New System.Drawing.Size(120, 67)
         Me.TextBox5.TabIndex = 4
         Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox5.Visible = False
@@ -165,11 +165,11 @@ Partial Class grillaSorteo
         Me.TextBox6.AcceptsTab = True
         Me.TextBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.ForeColor = System.Drawing.Color.White
-        Me.TextBox6.Location = New System.Drawing.Point(587, 361)
+        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox6.Location = New System.Drawing.Point(618, 363)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox6.Size = New System.Drawing.Size(120, 67)
         Me.TextBox6.TabIndex = 5
         Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox6.Visible = False
@@ -179,11 +179,11 @@ Partial Class grillaSorteo
         Me.TextBox7.AcceptsTab = True
         Me.TextBox7.BackColor = System.Drawing.Color.White
         Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.ForeColor = System.Drawing.Color.Black
-        Me.TextBox7.Location = New System.Drawing.Point(587, 415)
+        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox7.Location = New System.Drawing.Point(618, 432)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox7.Size = New System.Drawing.Size(120, 67)
         Me.TextBox7.TabIndex = 6
         Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox7.Visible = False
@@ -193,11 +193,11 @@ Partial Class grillaSorteo
         Me.TextBox8.AcceptsTab = True
         Me.TextBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.ForeColor = System.Drawing.Color.White
-        Me.TextBox8.Location = New System.Drawing.Point(587, 469)
+        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox8.Location = New System.Drawing.Point(618, 501)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox8.Size = New System.Drawing.Size(120, 67)
         Me.TextBox8.TabIndex = 7
         Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox8.Visible = False
@@ -207,11 +207,11 @@ Partial Class grillaSorteo
         Me.TextBox9.AcceptsTab = True
         Me.TextBox9.BackColor = System.Drawing.Color.White
         Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.ForeColor = System.Drawing.Color.Black
-        Me.TextBox9.Location = New System.Drawing.Point(587, 522)
+        Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox9.Location = New System.Drawing.Point(618, 570)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox9.Size = New System.Drawing.Size(120, 67)
         Me.TextBox9.TabIndex = 8
         Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox9.Visible = False
@@ -221,24 +221,23 @@ Partial Class grillaSorteo
         Me.TextBox10.AcceptsTab = True
         Me.TextBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.ForeColor = System.Drawing.Color.White
-        Me.TextBox10.Location = New System.Drawing.Point(587, 575)
+        Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox10.Location = New System.Drawing.Point(618, 639)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox10.Size = New System.Drawing.Size(120, 67)
         Me.TextBox10.TabIndex = 9
         Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox10.Visible = False
         '
         'lblOrden1
         '
-        Me.lblOrden1.AutoSize = True
         Me.lblOrden1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden1.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden1.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden1.Location = New System.Drawing.Point(316, 361)
+        Me.lblOrden1.Location = New System.Drawing.Point(261, 363)
         Me.lblOrden1.Name = "lblOrden1"
-        Me.lblOrden1.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden1.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden1.TabIndex = 20
         Me.lblOrden1.Text = "01"
         Me.lblOrden1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -246,13 +245,12 @@ Partial Class grillaSorteo
         '
         'lblOrden2
         '
-        Me.lblOrden2.AutoSize = True
         Me.lblOrden2.BackColor = System.Drawing.Color.White
-        Me.lblOrden2.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden2.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblOrden2.Location = New System.Drawing.Point(316, 415)
+        Me.lblOrden2.Location = New System.Drawing.Point(261, 432)
         Me.lblOrden2.Name = "lblOrden2"
-        Me.lblOrden2.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden2.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden2.TabIndex = 21
         Me.lblOrden2.Text = "02"
         Me.lblOrden2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -260,13 +258,12 @@ Partial Class grillaSorteo
         '
         'lblOrden3
         '
-        Me.lblOrden3.AutoSize = True
         Me.lblOrden3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden3.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden3.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden3.Location = New System.Drawing.Point(316, 469)
+        Me.lblOrden3.Location = New System.Drawing.Point(261, 501)
         Me.lblOrden3.Name = "lblOrden3"
-        Me.lblOrden3.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden3.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden3.TabIndex = 22
         Me.lblOrden3.Text = "03"
         Me.lblOrden3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -274,13 +271,12 @@ Partial Class grillaSorteo
         '
         'lblOrden4
         '
-        Me.lblOrden4.AutoSize = True
         Me.lblOrden4.BackColor = System.Drawing.Color.White
-        Me.lblOrden4.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden4.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblOrden4.Location = New System.Drawing.Point(316, 522)
+        Me.lblOrden4.Location = New System.Drawing.Point(261, 570)
         Me.lblOrden4.Name = "lblOrden4"
-        Me.lblOrden4.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden4.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden4.TabIndex = 23
         Me.lblOrden4.Text = "04"
         Me.lblOrden4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -288,13 +284,12 @@ Partial Class grillaSorteo
         '
         'lblOrden5
         '
-        Me.lblOrden5.AutoSize = True
         Me.lblOrden5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden5.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden5.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden5.Location = New System.Drawing.Point(316, 575)
+        Me.lblOrden5.Location = New System.Drawing.Point(261, 639)
         Me.lblOrden5.Name = "lblOrden5"
-        Me.lblOrden5.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden5.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden5.TabIndex = 24
         Me.lblOrden5.Text = "05"
         Me.lblOrden5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -302,13 +297,12 @@ Partial Class grillaSorteo
         '
         'lblOrden6
         '
-        Me.lblOrden6.AutoSize = True
         Me.lblOrden6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden6.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden6.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden6.Location = New System.Drawing.Point(512, 361)
+        Me.lblOrden6.Location = New System.Drawing.Point(502, 363)
         Me.lblOrden6.Name = "lblOrden6"
-        Me.lblOrden6.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden6.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden6.TabIndex = 25
         Me.lblOrden6.Text = "06"
         Me.lblOrden6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -316,13 +310,12 @@ Partial Class grillaSorteo
         '
         'lblOrden7
         '
-        Me.lblOrden7.AutoSize = True
         Me.lblOrden7.BackColor = System.Drawing.Color.White
-        Me.lblOrden7.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden7.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblOrden7.Location = New System.Drawing.Point(512, 415)
+        Me.lblOrden7.Location = New System.Drawing.Point(502, 432)
         Me.lblOrden7.Name = "lblOrden7"
-        Me.lblOrden7.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden7.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden7.TabIndex = 26
         Me.lblOrden7.Text = "07"
         Me.lblOrden7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -330,13 +323,12 @@ Partial Class grillaSorteo
         '
         'lblOrden8
         '
-        Me.lblOrden8.AutoSize = True
         Me.lblOrden8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden8.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden8.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden8.Location = New System.Drawing.Point(512, 469)
+        Me.lblOrden8.Location = New System.Drawing.Point(502, 501)
         Me.lblOrden8.Name = "lblOrden8"
-        Me.lblOrden8.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden8.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden8.TabIndex = 27
         Me.lblOrden8.Text = "08"
         Me.lblOrden8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -344,13 +336,12 @@ Partial Class grillaSorteo
         '
         'lblOrden9
         '
-        Me.lblOrden9.AutoSize = True
         Me.lblOrden9.BackColor = System.Drawing.Color.White
-        Me.lblOrden9.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden9.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblOrden9.Location = New System.Drawing.Point(512, 522)
+        Me.lblOrden9.Location = New System.Drawing.Point(502, 570)
         Me.lblOrden9.Name = "lblOrden9"
-        Me.lblOrden9.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden9.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden9.TabIndex = 28
         Me.lblOrden9.Text = "09"
         Me.lblOrden9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -358,13 +349,12 @@ Partial Class grillaSorteo
         '
         'lblOrden10
         '
-        Me.lblOrden10.AutoSize = True
         Me.lblOrden10.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden10.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden10.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden10.Location = New System.Drawing.Point(512, 575)
+        Me.lblOrden10.Location = New System.Drawing.Point(502, 639)
         Me.lblOrden10.Name = "lblOrden10"
-        Me.lblOrden10.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden10.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden10.TabIndex = 29
         Me.lblOrden10.Text = "10"
         Me.lblOrden10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -372,13 +362,12 @@ Partial Class grillaSorteo
         '
         'lblOrden20
         '
-        Me.lblOrden20.AutoSize = True
         Me.lblOrden20.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden20.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden20.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden20.Location = New System.Drawing.Point(904, 575)
+        Me.lblOrden20.Location = New System.Drawing.Point(985, 639)
         Me.lblOrden20.Name = "lblOrden20"
-        Me.lblOrden20.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden20.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden20.TabIndex = 49
         Me.lblOrden20.Text = "20"
         Me.lblOrden20.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -386,13 +375,12 @@ Partial Class grillaSorteo
         '
         'lblOrden19
         '
-        Me.lblOrden19.AutoSize = True
         Me.lblOrden19.BackColor = System.Drawing.Color.White
-        Me.lblOrden19.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden19.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblOrden19.Location = New System.Drawing.Point(904, 522)
+        Me.lblOrden19.Location = New System.Drawing.Point(985, 570)
         Me.lblOrden19.Name = "lblOrden19"
-        Me.lblOrden19.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden19.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden19.TabIndex = 48
         Me.lblOrden19.Text = "19"
         Me.lblOrden19.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -400,13 +388,12 @@ Partial Class grillaSorteo
         '
         'lblOrden18
         '
-        Me.lblOrden18.AutoSize = True
         Me.lblOrden18.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden18.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden18.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden18.Location = New System.Drawing.Point(904, 469)
+        Me.lblOrden18.Location = New System.Drawing.Point(985, 501)
         Me.lblOrden18.Name = "lblOrden18"
-        Me.lblOrden18.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden18.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden18.TabIndex = 47
         Me.lblOrden18.Text = "18"
         Me.lblOrden18.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -414,13 +401,12 @@ Partial Class grillaSorteo
         '
         'lblOrden17
         '
-        Me.lblOrden17.AutoSize = True
         Me.lblOrden17.BackColor = System.Drawing.Color.White
-        Me.lblOrden17.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden17.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblOrden17.Location = New System.Drawing.Point(904, 415)
+        Me.lblOrden17.Location = New System.Drawing.Point(985, 432)
         Me.lblOrden17.Name = "lblOrden17"
-        Me.lblOrden17.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden17.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden17.TabIndex = 46
         Me.lblOrden17.Text = "17"
         Me.lblOrden17.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -428,13 +414,12 @@ Partial Class grillaSorteo
         '
         'lblOrden16
         '
-        Me.lblOrden16.AutoSize = True
         Me.lblOrden16.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden16.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden16.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden16.Location = New System.Drawing.Point(904, 361)
+        Me.lblOrden16.Location = New System.Drawing.Point(985, 363)
         Me.lblOrden16.Name = "lblOrden16"
-        Me.lblOrden16.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden16.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden16.TabIndex = 45
         Me.lblOrden16.Text = "16"
         Me.lblOrden16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -442,13 +427,12 @@ Partial Class grillaSorteo
         '
         'lblOrden15
         '
-        Me.lblOrden15.AutoSize = True
         Me.lblOrden15.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden15.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden15.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden15.Location = New System.Drawing.Point(708, 575)
+        Me.lblOrden15.Location = New System.Drawing.Point(743, 639)
         Me.lblOrden15.Name = "lblOrden15"
-        Me.lblOrden15.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden15.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden15.TabIndex = 44
         Me.lblOrden15.Text = "15"
         Me.lblOrden15.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -456,13 +440,12 @@ Partial Class grillaSorteo
         '
         'lblOrden14
         '
-        Me.lblOrden14.AutoSize = True
         Me.lblOrden14.BackColor = System.Drawing.Color.White
-        Me.lblOrden14.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden14.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblOrden14.Location = New System.Drawing.Point(708, 522)
+        Me.lblOrden14.Location = New System.Drawing.Point(743, 570)
         Me.lblOrden14.Name = "lblOrden14"
-        Me.lblOrden14.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden14.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden14.TabIndex = 43
         Me.lblOrden14.Text = "14"
         Me.lblOrden14.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -470,13 +453,12 @@ Partial Class grillaSorteo
         '
         'lblOrden13
         '
-        Me.lblOrden13.AutoSize = True
         Me.lblOrden13.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden13.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden13.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden13.Location = New System.Drawing.Point(708, 469)
+        Me.lblOrden13.Location = New System.Drawing.Point(743, 501)
         Me.lblOrden13.Name = "lblOrden13"
-        Me.lblOrden13.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden13.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden13.TabIndex = 42
         Me.lblOrden13.Text = "13"
         Me.lblOrden13.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -484,13 +466,12 @@ Partial Class grillaSorteo
         '
         'lblOrden12
         '
-        Me.lblOrden12.AutoSize = True
         Me.lblOrden12.BackColor = System.Drawing.Color.White
-        Me.lblOrden12.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden12.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblOrden12.Location = New System.Drawing.Point(708, 415)
+        Me.lblOrden12.Location = New System.Drawing.Point(743, 432)
         Me.lblOrden12.Name = "lblOrden12"
-        Me.lblOrden12.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden12.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden12.TabIndex = 41
         Me.lblOrden12.Text = "12"
         Me.lblOrden12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -498,13 +479,12 @@ Partial Class grillaSorteo
         '
         'lblOrden11
         '
-        Me.lblOrden11.AutoSize = True
         Me.lblOrden11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblOrden11.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrden11.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrden11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblOrden11.Location = New System.Drawing.Point(708, 361)
+        Me.lblOrden11.Location = New System.Drawing.Point(743, 363)
         Me.lblOrden11.Name = "lblOrden11"
-        Me.lblOrden11.Size = New System.Drawing.Size(75, 54)
+        Me.lblOrden11.Size = New System.Drawing.Size(115, 67)
         Me.lblOrden11.TabIndex = 40
         Me.lblOrden11.Text = "11"
         Me.lblOrden11.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -515,11 +495,11 @@ Partial Class grillaSorteo
         Me.TextBox20.AcceptsTab = True
         Me.TextBox20.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox20.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox20.ForeColor = System.Drawing.Color.White
-        Me.TextBox20.Location = New System.Drawing.Point(979, 575)
+        Me.TextBox20.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox20.Location = New System.Drawing.Point(1101, 639)
         Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox20.Size = New System.Drawing.Size(120, 67)
         Me.TextBox20.TabIndex = 39
         Me.TextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox20.Visible = False
@@ -529,11 +509,11 @@ Partial Class grillaSorteo
         Me.TextBox19.AcceptsTab = True
         Me.TextBox19.BackColor = System.Drawing.Color.White
         Me.TextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox19.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox19.ForeColor = System.Drawing.Color.Black
-        Me.TextBox19.Location = New System.Drawing.Point(979, 522)
+        Me.TextBox19.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox19.Location = New System.Drawing.Point(1101, 570)
         Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox19.Size = New System.Drawing.Size(120, 67)
         Me.TextBox19.TabIndex = 38
         Me.TextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox19.Visible = False
@@ -543,11 +523,11 @@ Partial Class grillaSorteo
         Me.TextBox18.AcceptsTab = True
         Me.TextBox18.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox18.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox18.ForeColor = System.Drawing.Color.White
-        Me.TextBox18.Location = New System.Drawing.Point(979, 469)
+        Me.TextBox18.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox18.Location = New System.Drawing.Point(1101, 501)
         Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox18.Size = New System.Drawing.Size(120, 67)
         Me.TextBox18.TabIndex = 37
         Me.TextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox18.Visible = False
@@ -557,11 +537,11 @@ Partial Class grillaSorteo
         Me.TextBox17.AcceptsTab = True
         Me.TextBox17.BackColor = System.Drawing.Color.White
         Me.TextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox17.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox17.ForeColor = System.Drawing.Color.Black
-        Me.TextBox17.Location = New System.Drawing.Point(979, 415)
+        Me.TextBox17.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox17.Location = New System.Drawing.Point(1101, 432)
         Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox17.Size = New System.Drawing.Size(120, 67)
         Me.TextBox17.TabIndex = 36
         Me.TextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox17.Visible = False
@@ -571,11 +551,11 @@ Partial Class grillaSorteo
         Me.TextBox16.AcceptsTab = True
         Me.TextBox16.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox16.ForeColor = System.Drawing.Color.White
-        Me.TextBox16.Location = New System.Drawing.Point(979, 361)
+        Me.TextBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox16.Location = New System.Drawing.Point(1101, 363)
         Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox16.Size = New System.Drawing.Size(120, 67)
         Me.TextBox16.TabIndex = 35
         Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox16.Visible = False
@@ -585,11 +565,11 @@ Partial Class grillaSorteo
         Me.TextBox15.AcceptsTab = True
         Me.TextBox15.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox15.ForeColor = System.Drawing.Color.White
-        Me.TextBox15.Location = New System.Drawing.Point(783, 575)
+        Me.TextBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox15.Location = New System.Drawing.Point(859, 639)
         Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox15.Size = New System.Drawing.Size(120, 67)
         Me.TextBox15.TabIndex = 34
         Me.TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox15.Visible = False
@@ -599,11 +579,11 @@ Partial Class grillaSorteo
         Me.TextBox14.AcceptsTab = True
         Me.TextBox14.BackColor = System.Drawing.Color.White
         Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox14.ForeColor = System.Drawing.Color.Black
-        Me.TextBox14.Location = New System.Drawing.Point(783, 522)
+        Me.TextBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox14.Location = New System.Drawing.Point(859, 570)
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox14.Size = New System.Drawing.Size(120, 67)
         Me.TextBox14.TabIndex = 33
         Me.TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox14.Visible = False
@@ -613,11 +593,11 @@ Partial Class grillaSorteo
         Me.TextBox13.AcceptsTab = True
         Me.TextBox13.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox13.ForeColor = System.Drawing.Color.White
-        Me.TextBox13.Location = New System.Drawing.Point(783, 469)
+        Me.TextBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox13.Location = New System.Drawing.Point(859, 501)
         Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox13.Size = New System.Drawing.Size(120, 67)
         Me.TextBox13.TabIndex = 32
         Me.TextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox13.Visible = False
@@ -627,11 +607,11 @@ Partial Class grillaSorteo
         Me.TextBox12.AcceptsTab = True
         Me.TextBox12.BackColor = System.Drawing.Color.White
         Me.TextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox12.ForeColor = System.Drawing.Color.Black
-        Me.TextBox12.Location = New System.Drawing.Point(783, 415)
+        Me.TextBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox12.Location = New System.Drawing.Point(859, 432)
         Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox12.Size = New System.Drawing.Size(120, 67)
         Me.TextBox12.TabIndex = 31
         Me.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox12.Visible = False
@@ -641,11 +621,11 @@ Partial Class grillaSorteo
         Me.TextBox11.AcceptsTab = True
         Me.TextBox11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox11.ForeColor = System.Drawing.Color.White
-        Me.TextBox11.Location = New System.Drawing.Point(783, 361)
+        Me.TextBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.TextBox11.Location = New System.Drawing.Point(859, 363)
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(120, 53)
+        Me.TextBox11.Size = New System.Drawing.Size(120, 67)
         Me.TextBox11.TabIndex = 30
         Me.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TextBox11.Visible = False
@@ -653,7 +633,7 @@ Partial Class grillaSorteo
         'PctBolillero1
         '
         Me.PctBolillero1.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.PctBolillero1.Location = New System.Drawing.Point(86, 93)
+        Me.PctBolillero1.Location = New System.Drawing.Point(86, 95)
         Me.PctBolillero1.Name = "PctBolillero1"
         Me.PctBolillero1.Size = New System.Drawing.Size(300, 300)
         Me.PctBolillero1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -663,7 +643,7 @@ Partial Class grillaSorteo
         'pctBolillero2
         '
         Me.pctBolillero2.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.pctBolillero2.Location = New System.Drawing.Point(399, 92)
+        Me.pctBolillero2.Location = New System.Drawing.Point(399, 94)
         Me.pctBolillero2.Name = "pctBolillero2"
         Me.pctBolillero2.Size = New System.Drawing.Size(300, 300)
         Me.pctBolillero2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -673,7 +653,7 @@ Partial Class grillaSorteo
         'pctBolillero3
         '
         Me.pctBolillero3.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.pctBolillero3.Location = New System.Drawing.Point(703, 93)
+        Me.pctBolillero3.Location = New System.Drawing.Point(703, 95)
         Me.pctBolillero3.Name = "pctBolillero3"
         Me.pctBolillero3.Size = New System.Drawing.Size(300, 300)
         Me.pctBolillero3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -683,7 +663,7 @@ Partial Class grillaSorteo
         'pctBolillero4
         '
         Me.pctBolillero4.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.pctBolillero4.Location = New System.Drawing.Point(1006, 93)
+        Me.pctBolillero4.Location = New System.Drawing.Point(1006, 95)
         Me.pctBolillero4.Name = "pctBolillero4"
         Me.pctBolillero4.Size = New System.Drawing.Size(300, 300)
         Me.pctBolillero4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -698,7 +678,7 @@ Partial Class grillaSorteo
         '
         Me.lblUbicacion.AutoSize = True
         Me.lblUbicacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 80.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUbicacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.lblUbicacion.ForeColor = System.Drawing.Color.White
         Me.lblUbicacion.Location = New System.Drawing.Point(246, 697)
         Me.lblUbicacion.Name = "lblUbicacion"
         Me.lblUbicacion.Size = New System.Drawing.Size(380, 120)
@@ -737,11 +717,11 @@ Partial Class grillaSorteo
         'lblPos0
         '
         Me.lblPos0.BackColor = System.Drawing.Color.White
-        Me.lblPos0.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPos0.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
         Me.lblPos0.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblPos0.Location = New System.Drawing.Point(316, 334)
+        Me.lblPos0.Location = New System.Drawing.Point(261, 336)
         Me.lblPos0.Name = "lblPos0"
-        Me.lblPos0.Size = New System.Drawing.Size(76, 26)
+        Me.lblPos0.Size = New System.Drawing.Size(115, 26)
         Me.lblPos0.TabIndex = 64
         Me.lblPos0.Text = "Posición"
         Me.lblPos0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -750,11 +730,11 @@ Partial Class grillaSorteo
         'lblRes0
         '
         Me.lblRes0.BackColor = System.Drawing.Color.White
-        Me.lblRes0.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblRes0.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
         Me.lblRes0.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblRes0.Location = New System.Drawing.Point(392, 334)
+        Me.lblRes0.Location = New System.Drawing.Point(377, 336)
         Me.lblRes0.Name = "lblRes0"
-        Me.lblRes0.Size = New System.Drawing.Size(119, 26)
+        Me.lblRes0.Size = New System.Drawing.Size(120, 26)
         Me.lblRes0.TabIndex = 65
         Me.lblRes0.Text = "Resultado"
         Me.lblRes0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -763,11 +743,11 @@ Partial Class grillaSorteo
         'lblRes5
         '
         Me.lblRes5.BackColor = System.Drawing.Color.White
-        Me.lblRes5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblRes5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
         Me.lblRes5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblRes5.Location = New System.Drawing.Point(588, 334)
+        Me.lblRes5.Location = New System.Drawing.Point(618, 336)
         Me.lblRes5.Name = "lblRes5"
-        Me.lblRes5.Size = New System.Drawing.Size(119, 26)
+        Me.lblRes5.Size = New System.Drawing.Size(120, 26)
         Me.lblRes5.TabIndex = 67
         Me.lblRes5.Text = "Resultado"
         Me.lblRes5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -776,11 +756,11 @@ Partial Class grillaSorteo
         'lblPos5
         '
         Me.lblPos5.BackColor = System.Drawing.Color.White
-        Me.lblPos5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPos5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
         Me.lblPos5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblPos5.Location = New System.Drawing.Point(512, 334)
+        Me.lblPos5.Location = New System.Drawing.Point(502, 336)
         Me.lblPos5.Name = "lblPos5"
-        Me.lblPos5.Size = New System.Drawing.Size(76, 26)
+        Me.lblPos5.Size = New System.Drawing.Size(115, 26)
         Me.lblPos5.TabIndex = 66
         Me.lblPos5.Text = "Posición"
         Me.lblPos5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -789,11 +769,11 @@ Partial Class grillaSorteo
         'lblRes15
         '
         Me.lblRes15.BackColor = System.Drawing.Color.White
-        Me.lblRes15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblRes15.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
         Me.lblRes15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblRes15.Location = New System.Drawing.Point(980, 334)
+        Me.lblRes15.Location = New System.Drawing.Point(1101, 336)
         Me.lblRes15.Name = "lblRes15"
-        Me.lblRes15.Size = New System.Drawing.Size(119, 26)
+        Me.lblRes15.Size = New System.Drawing.Size(120, 26)
         Me.lblRes15.TabIndex = 71
         Me.lblRes15.Text = "Resultado"
         Me.lblRes15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -802,11 +782,11 @@ Partial Class grillaSorteo
         'lblPos15
         '
         Me.lblPos15.BackColor = System.Drawing.Color.White
-        Me.lblPos15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPos15.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
         Me.lblPos15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblPos15.Location = New System.Drawing.Point(904, 334)
+        Me.lblPos15.Location = New System.Drawing.Point(985, 336)
         Me.lblPos15.Name = "lblPos15"
-        Me.lblPos15.Size = New System.Drawing.Size(76, 26)
+        Me.lblPos15.Size = New System.Drawing.Size(115, 26)
         Me.lblPos15.TabIndex = 70
         Me.lblPos15.Text = "Posición"
         Me.lblPos15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -815,11 +795,11 @@ Partial Class grillaSorteo
         'lblRes10
         '
         Me.lblRes10.BackColor = System.Drawing.Color.White
-        Me.lblRes10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblRes10.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
         Me.lblRes10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblRes10.Location = New System.Drawing.Point(784, 334)
+        Me.lblRes10.Location = New System.Drawing.Point(859, 336)
         Me.lblRes10.Name = "lblRes10"
-        Me.lblRes10.Size = New System.Drawing.Size(119, 26)
+        Me.lblRes10.Size = New System.Drawing.Size(120, 26)
         Me.lblRes10.TabIndex = 69
         Me.lblRes10.Text = "Resultado"
         Me.lblRes10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -828,11 +808,11 @@ Partial Class grillaSorteo
         'lblPos10
         '
         Me.lblPos10.BackColor = System.Drawing.Color.White
-        Me.lblPos10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPos10.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
         Me.lblPos10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.lblPos10.Location = New System.Drawing.Point(708, 334)
+        Me.lblPos10.Location = New System.Drawing.Point(743, 336)
         Me.lblPos10.Name = "lblPos10"
-        Me.lblPos10.Size = New System.Drawing.Size(76, 26)
+        Me.lblPos10.Size = New System.Drawing.Size(115, 26)
         Me.lblPos10.TabIndex = 68
         Me.lblPos10.Text = "Posición"
         Me.lblPos10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -841,24 +821,24 @@ Partial Class grillaSorteo
         'lblTituloLetras
         '
         Me.lblTituloLetras.BackColor = System.Drawing.Color.White
-        Me.lblTituloLetras.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.lblTituloLetras.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold)
         Me.lblTituloLetras.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblTituloLetras.Location = New System.Drawing.Point(316, 629)
+        Me.lblTituloLetras.Location = New System.Drawing.Point(261, 708)
         Me.lblTituloLetras.Name = "lblTituloLetras"
-        Me.lblTituloLetras.Size = New System.Drawing.Size(783, 53)
+        Me.lblTituloLetras.Size = New System.Drawing.Size(960, 53)
         Me.lblTituloLetras.TabIndex = 73
-        Me.lblTituloLetras.Text = "Letras"
+        Me.lblTituloLetras.Text = "LETRAS"
         Me.lblTituloLetras.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lblTituloLetras.Visible = False
         '
         'lblLetras
         '
         Me.lblLetras.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblLetras.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.lblLetras.ForeColor = System.Drawing.Color.White
-        Me.lblLetras.Location = New System.Drawing.Point(316, 682)
+        Me.lblLetras.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold)
+        Me.lblLetras.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.lblLetras.Location = New System.Drawing.Point(261, 762)
         Me.lblLetras.Name = "lblLetras"
-        Me.lblLetras.Size = New System.Drawing.Size(783, 53)
+        Me.lblLetras.Size = New System.Drawing.Size(960, 53)
         Me.lblLetras.TabIndex = 74
         Me.lblLetras.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lblLetras.Visible = False
@@ -866,7 +846,7 @@ Partial Class grillaSorteo
         'lblRepetidos
         '
         Me.lblRepetidos.AutoSize = True
-        Me.lblRepetidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.lblRepetidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.lblRepetidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
         Me.lblRepetidos.ForeColor = System.Drawing.Color.White
         Me.lblRepetidos.Location = New System.Drawing.Point(960, 682)
@@ -881,7 +861,7 @@ Partial Class grillaSorteo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1292, 783)
+        Me.ClientSize = New System.Drawing.Size(1292, 833)
         Me.Controls.Add(Me.lblRepetidos)
         Me.Controls.Add(Me.lblLetras)
         Me.Controls.Add(Me.lblTituloLetras)

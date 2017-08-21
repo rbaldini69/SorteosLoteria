@@ -172,7 +172,10 @@ Public Class frmConsola
 
     End Sub
     Private Sub NuevaExtraccion()
-
+        'If grillaSorteo.resolucionCambiada = True Then
+        'grillaSorteo.escalar1()
+        'grillaSorteo.resolucionCambiada = False
+        'End If
         For Each ctl As Control In Me.gbxNumerosSorteados.Controls
 
             If TypeOf (ctl) Is TextBox Then
@@ -198,6 +201,8 @@ Public Class frmConsola
         grillaSorteo.pctBolillero3.Size = New Size(300, 300)
         grillaSorteo.pctBolillero4.Size = New Size(300, 300)
         'grillaSorteo.PctBolillero0.Size = New Size(300, 300)
+
+
         For index = 1 To 20
             grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 220)
             grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 220)
@@ -469,32 +474,32 @@ Public Class frmConsola
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
         If num < 60 Then
-            'If num Mod 2 = 0 Then
-            'grillaSorteo.Controls(auxUbicacion).ForeColor = Color.White
-            'Else
-            'grillaSorteo.Controls(auxUbicacion).Visible = True
-            '   grillaSorteo.Controls(auxUbicacion).ForeColor = Color.Red
-            'End If
+            If num Mod 2 = 0 Then
+                grillaSorteo.Controls(auxUbicacion).ForeColor = Color.White
+            Else
+                grillaSorteo.Controls(auxUbicacion).Visible = True
+                grillaSorteo.Controls(auxUbicacion).ForeColor = Color.Red
+            End If
             num += 1
-            grillaSorteo.PctBolillero1.Location = New Point(grillaSorteo.PctBolillero1.Location.X + distanciax1, grillaSorteo.PctBolillero1.Location.Y + distanciay1)
-            grillaSorteo.pctBolillero2.Location = New Point(grillaSorteo.pctBolillero2.Location.X + distanciax2, grillaSorteo.pctBolillero2.Location.Y + distanciay2)
-            grillaSorteo.pctBolillero3.Location = New Point(grillaSorteo.pctBolillero3.Location.X + distanciax3, grillaSorteo.pctBolillero3.Location.Y + distanciay3)
-            grillaSorteo.pctBolillero4.Location = New Point(grillaSorteo.pctBolillero4.Location.X + distanciax4, grillaSorteo.pctBolillero4.Location.Y + distanciay4)
-            'grillaSorteo.PctBolillero0.Location = New Point(408, 56)
+                grillaSorteo.PctBolillero1.Location = New Point(grillaSorteo.PctBolillero1.Location.X + distanciax1, grillaSorteo.PctBolillero1.Location.Y + distanciay1)
+                grillaSorteo.pctBolillero2.Location = New Point(grillaSorteo.pctBolillero2.Location.X + distanciax2, grillaSorteo.pctBolillero2.Location.Y + distanciay2)
+                grillaSorteo.pctBolillero3.Location = New Point(grillaSorteo.pctBolillero3.Location.X + distanciax3, grillaSorteo.pctBolillero3.Location.Y + distanciay3)
+                grillaSorteo.pctBolillero4.Location = New Point(grillaSorteo.pctBolillero4.Location.X + distanciax4, grillaSorteo.pctBolillero4.Location.Y + distanciay4)
+                'grillaSorteo.PctBolillero0.Location = New Point(408, 56)
 
 
-            grillaSorteo.PctBolillero1.Size = New Size(grillaSorteo.PctBolillero1.Size.Height - 10, grillaSorteo.PctBolillero1.Size.Height - 10)
-            grillaSorteo.pctBolillero2.Size = New Size(grillaSorteo.pctBolillero2.Size.Height - 10, grillaSorteo.pctBolillero2.Size.Height - 10)
-            grillaSorteo.pctBolillero3.Size = New Size(grillaSorteo.pctBolillero3.Size.Height - 10, grillaSorteo.pctBolillero3.Size.Height - 10)
-            grillaSorteo.pctBolillero4.Size = New Size(grillaSorteo.pctBolillero4.Size.Height - 10, grillaSorteo.pctBolillero4.Size.Height - 10)
+                grillaSorteo.PctBolillero1.Size = New Size(grillaSorteo.PctBolillero1.Size.Height - 10, grillaSorteo.PctBolillero1.Size.Height - 10)
+                grillaSorteo.pctBolillero2.Size = New Size(grillaSorteo.pctBolillero2.Size.Height - 10, grillaSorteo.pctBolillero2.Size.Height - 10)
+                grillaSorteo.pctBolillero3.Size = New Size(grillaSorteo.pctBolillero3.Size.Height - 10, grillaSorteo.pctBolillero3.Size.Height - 10)
+                grillaSorteo.pctBolillero4.Size = New Size(grillaSorteo.pctBolillero4.Size.Height - 10, grillaSorteo.pctBolillero4.Size.Height - 10)
 
-            'grillaSorteo.PictureBox1.Location = New Point(grillaSorteo.PictureBox1.Location.X + 1, grillaSorteo.PictureBox1.Location.Y)
-            'grillaSorteo.PictureBox1.Size = New Size(grillaSorteo.PictureBox1.Width - 20, grillaSorteo.PictureBox1.Size.Height)
-        Else
+                'grillaSorteo.PictureBox1.Location = New Point(grillaSorteo.PictureBox1.Location.X + 1, grillaSorteo.PictureBox1.Location.Y)
+                'grillaSorteo.PictureBox1.Size = New Size(grillaSorteo.PictureBox1.Width - 20, grillaSorteo.PictureBox1.Size.Height)
+            Else
 
-            num = 0
+                num = 0
             Timer1.Enabled = False
-            ' grillaSorteo.Controls(auxUbicacion).ForeColor = Color.Black
+            grillaSorteo.Controls(auxUbicacion).ForeColor = Color.Red
             '  grillaSorteo.PctBolillero0.Size = New Size(300, 300)
             ' NuevaExtraccion()
 
@@ -509,6 +514,13 @@ Public Class frmConsola
                 grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y - 220)
 
             Next
+            If terminado = True Then
+                Exit Sub
+            Else
+                MessageBox.Show("Continuar!", "", MessageBoxButtons.OK)
+
+                NuevaExtraccion()
+            End If
 
         End If
 
@@ -577,31 +589,32 @@ Public Class frmConsola
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        Dim colorOriginalFondo As Color
-        colorOriginalFondo = grillaSorteo.Controls(auxUbicacion).ForeColor
-        If num2 < 30 Then
-            If num2 Mod 2 = 0 Then
-                grillaSorteo.Controls(auxUbicacion).ForeColor = Color.White
-            Else
-                'grillaSorteo.Controls(auxUbicacion).Visible = True
-                grillaSorteo.Controls(auxUbicacion).ForeColor = Color.Red
-            End If
-            num2 += 1
+        'Dim colorOriginalFondo As Color
+        'colorOriginalFondo = grillaSorteo.Controls(auxUbicacion).ForeColor
+        'If num2 < 90 Then
+        '    If num2 Mod 2 = 0 Then
+        '        grillaSorteo.Controls(auxUbicacion).ForeColor = Color.White
+        '    Else
+        '        'grillaSorteo.Controls(auxUbicacion).Visible = True
+        '        grillaSorteo.Controls(auxUbicacion).ForeColor = Color.Red
+        '    End If
+        '    num2 += 1
 
-        Else
-            num2 = 0
-            Timer2.Enabled = False
-            'grillaSorteo.Controls(auxUbicacion).ForeColor = Color.White
-            If terminado = True Then
-                Exit Sub
-            Else
-                MessageBox.Show("Continuar!", "", MessageBoxButtons.OK)
-                NuevaExtraccion()
-            End If
+        'Else
+        '    num2 = 0
+        '    Timer2.Enabled = False
+        '    'grillaSorteo.Controls(auxUbicacion).ForeColor = Color.White
+        '    If terminado = True Then
+        '        Exit Sub
+        '    Else
+        '        MessageBox.Show("Continuar!", "", MessageBoxButtons.OK)
+
+        '        NuevaExtraccion()
+        '    End If
 
 
-        End If
-        grillaSorteo.Controls(auxUbicacion).ForeColor = colorOriginalFondo
+        'End If
+        'grillaSorteo.Controls(auxUbicacion).ForeColor = colorOriginalFondo
     End Sub
 
     Private Sub frmConsola_Enter(sender As Object, e As EventArgs) Handles MyBase.Enter
