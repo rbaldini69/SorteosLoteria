@@ -157,10 +157,10 @@ Public Class frmConsola
 
         Next
 
-        grillaSorteo.PctBolillero1.Location = New Point(37, 56)
-        grillaSorteo.pctBolillero2.Location = New Point(355, 56)
-        grillaSorteo.pctBolillero3.Location = New Point(673, 56)
-        grillaSorteo.pctBolillero4.Location = New Point(994, 56)
+        grillaSorteo.PctBolillero1.Location = New Point(43, 206)
+        grillaSorteo.pctBolillero2.Location = New Point(369, 206)
+        grillaSorteo.pctBolillero3.Location = New Point(696, 206)
+        grillaSorteo.pctBolillero4.Location = New Point(1022, 206)
         'grillaSorteo.PctBolillero0.Location = New Point(408, 56)
 
 
@@ -173,9 +173,9 @@ Public Class frmConsola
     End Sub
     Private Sub NuevaExtraccion()
         'If grillaSorteo.resolucionCambiada = True Then
-        'grillaSorteo.escalar1()
-        'grillaSorteo.resolucionCambiada = False
-        'End If
+        ' grillaSorteo.escalar1()
+        ' grillaSorteo.resolucionCambiada = False
+        ' End If
         For Each ctl As Control In Me.gbxNumerosSorteados.Controls
 
             If TypeOf (ctl) Is TextBox Then
@@ -201,24 +201,26 @@ Public Class frmConsola
         grillaSorteo.pctBolillero3.Size = New Size(300, 300)
         grillaSorteo.pctBolillero4.Size = New Size(300, 300)
         'grillaSorteo.PctBolillero0.Size = New Size(300, 300)
-
+        grillaSorteo.PctBolillero1.Scale(grillaSorteo.f)
+        grillaSorteo.pctBolillero2.Scale(grillaSorteo.f)
+        grillaSorteo.pctBolillero3.Scale(grillaSorteo.f)
+        grillaSorteo.pctBolillero4.Scale(grillaSorteo.f)
 
         For index = 1 To 20
-            grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 120)
-            grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 120)
+            grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 80)
+            grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 80)
             grillaSorteo.Controls("TextBox" & index).Visible = False
             grillaSorteo.Controls("lblOrden" & index).Visible = False
 
         Next
         For index = 15 To 0 Step -5
-            grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y + 120)
-            grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y + 120)
+            grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y + 80)
+            grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y + 80)
 
             grillaSorteo.Controls("lblPos" & index).Visible = False
             grillaSorteo.Controls("lblRes" & index).Visible = False
 
         Next
-        'grillaSorteo.escalar1()
 
     End Sub
 #End Region
@@ -295,7 +297,7 @@ Public Class frmConsola
                     Me.distanciay4 = ((grillaSorteo.Controls(auxUbicacion).Location.Y + 25 - (grillaSorteo.pctBolillero4.Location.Y)) / 30)
 
                     Timer1.Enabled = True
-                    Timer2.Enabled = True
+                    'Timer2.Enabled = True
 
                     posiciones(CInt(Ubicacion.Text) - 1) = Me.txtNumSorteado.Text
                     ' Timer1.Enabled = True
@@ -328,7 +330,7 @@ Public Class frmConsola
 
                     grillaSorteo.Controls(auxUbicacion).Text = Me.txtNumSorteado.Text
                     Timer1.Enabled = True
-                    Timer2.Enabled = True
+                    'Timer2.Enabled = True
 
                     posiciones(CInt(Ubicacion.Text) - 1) = Me.txtNumSorteado.Text
                     ListBox1.Items.Clear()
@@ -505,13 +507,13 @@ Public Class frmConsola
 
 
             For index = 1 To 20
-                grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y - 120)
-                grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y - 120)
+                grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y - 80)
+                grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y - 80)
                 'grillaSorteo.Controls("LblOrden" & index).Visible = False
             Next
             For index = 15 To 0 Step -5
-                grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y - 120)
-                grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y - 120)
+                grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y - 80)
+                grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y - 80)
 
             Next
             If terminado = True Then
@@ -897,6 +899,10 @@ Public Class frmConsola
         grillaSorteo.lblModalidad.Text = Me.cboModalidad.SelectedItem
 
 
+    End Sub
+
+    Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
+        InicializarSorteo()
     End Sub
 End Class
 

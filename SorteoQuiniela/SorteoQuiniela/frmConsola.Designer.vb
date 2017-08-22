@@ -26,6 +26,8 @@ Partial Class frmConsola
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmConsola))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.gbxDatosSorteo = New System.Windows.Forms.GroupBox()
+        Me.lblModadlidad = New System.Windows.Forms.Label()
+        Me.cboModalidad = New System.Windows.Forms.ComboBox()
         Me.btnArchivo = New System.Windows.Forms.Button()
         Me.dtpFechaSorteo = New System.Windows.Forms.DateTimePicker()
         Me.lblFecha = New System.Windows.Forms.Label()
@@ -71,8 +73,7 @@ Partial Class frmConsola
         Me.txtUbicacionPoceada = New System.Windows.Forms.TextBox()
         Me.txtNumSorteadoPoceada = New System.Windows.Forms.TextBox()
         Me.btnProcesarDatos = New System.Windows.Forms.Button()
-        Me.cboModalidad = New System.Windows.Forms.ComboBox()
-        Me.lblModadlidad = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.gbxDatosSorteo.SuspendLayout()
         Me.gbxNumerosSorteados.SuspendLayout()
         Me.gbxLetras.SuspendLayout()
@@ -100,6 +101,24 @@ Partial Class frmConsola
         Me.gbxDatosSorteo.TabIndex = 22
         Me.gbxDatosSorteo.TabStop = False
         Me.gbxDatosSorteo.Text = "Datos del Sorteo"
+        '
+        'lblModadlidad
+        '
+        Me.lblModadlidad.AutoSize = True
+        Me.lblModadlidad.Location = New System.Drawing.Point(45, 82)
+        Me.lblModadlidad.Name = "lblModadlidad"
+        Me.lblModadlidad.Size = New System.Drawing.Size(56, 13)
+        Me.lblModadlidad.TabIndex = 30
+        Me.lblModadlidad.Text = "Modalidad"
+        '
+        'cboModalidad
+        '
+        Me.cboModalidad.FormattingEnabled = True
+        Me.cboModalidad.Items.AddRange(New Object() {"Primera", "Matutina", "Vespertina", "Nocturna"})
+        Me.cboModalidad.Location = New System.Drawing.Point(7, 60)
+        Me.cboModalidad.Name = "cboModalidad"
+        Me.cboModalidad.Size = New System.Drawing.Size(128, 21)
+        Me.cboModalidad.TabIndex = 29
         '
         'btnArchivo
         '
@@ -514,29 +533,21 @@ Partial Class frmConsola
         Me.btnProcesarDatos.Text = "Guardar Como"
         Me.btnProcesarDatos.UseVisualStyleBackColor = True
         '
-        'cboModalidad
+        'Button1
         '
-        Me.cboModalidad.FormattingEnabled = True
-        Me.cboModalidad.Items.AddRange(New Object() {"Primera", "Matutina", "Vespertina", "Nocturna"})
-        Me.cboModalidad.Location = New System.Drawing.Point(7, 60)
-        Me.cboModalidad.Name = "cboModalidad"
-        Me.cboModalidad.Size = New System.Drawing.Size(128, 21)
-        Me.cboModalidad.TabIndex = 29
-        '
-        'lblModadlidad
-        '
-        Me.lblModadlidad.AutoSize = True
-        Me.lblModadlidad.Location = New System.Drawing.Point(45, 82)
-        Me.lblModadlidad.Name = "lblModadlidad"
-        Me.lblModadlidad.Size = New System.Drawing.Size(56, 13)
-        Me.lblModadlidad.TabIndex = 30
-        Me.lblModadlidad.Text = "Modalidad"
+        Me.Button1.Location = New System.Drawing.Point(185, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(118, 23)
+        Me.Button1.TabIndex = 33
+        Me.Button1.Text = "Limpiar"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'frmConsola
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(874, 426)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnProcesarDatos)
         Me.Controls.Add(Me.gbxPoceada)
         Me.Controls.Add(Me.gbxLetras)
@@ -608,4 +619,5 @@ Partial Class frmConsola
     Friend WithEvents btnProcesarDatos As Button
     Friend WithEvents cboModalidad As ComboBox
     Friend WithEvents lblModadlidad As Label
+    Friend WithEvents Button1 As Button
 End Class

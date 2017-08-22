@@ -1,7 +1,8 @@
 ﻿Imports System
 Imports System.Runtime.InteropServices
 Public Class grillaSorteo
-    Public resolucionCambiada As Boolean = False
+    Public f As New System.Drawing.SizeF
+
 
 
     Private Sub grillaSorteo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -226,7 +227,7 @@ Public Class grillaSorteo
         Dim height As Integer = desktopSize.Height
         Dim width As Integer = desktopSize.Width
         If height <> 768 And width <> 1366 Then
-            Dim f As New System.Drawing.SizeF
+            Me.Scale(f)
             f.Height = ((100 / 768) * Me.Height) / 100
             f.Width = ((100 / 1366) * Me.Width) / 100
             For Each ctrl As Control In Me.Controls
@@ -247,7 +248,5 @@ Public Class grillaSorteo
                 End If
             Next
         End If
-        resolucionCambiada = True
-
     End Sub
 End Class
