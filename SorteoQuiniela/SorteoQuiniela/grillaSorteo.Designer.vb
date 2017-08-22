@@ -638,7 +638,7 @@ Partial Class grillaSorteo
         'PctBolillero1
         '
         Me.PctBolillero1.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.PctBolillero1.Location = New System.Drawing.Point(49, 206)
+        Me.PctBolillero1.Location = New System.Drawing.Point(43, 206)
         Me.PctBolillero1.Name = "PctBolillero1"
         Me.PctBolillero1.Size = New System.Drawing.Size(300, 300)
         Me.PctBolillero1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -648,7 +648,7 @@ Partial Class grillaSorteo
         'pctBolillero2
         '
         Me.pctBolillero2.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.pctBolillero2.Location = New System.Drawing.Point(362, 206)
+        Me.pctBolillero2.Location = New System.Drawing.Point(369, 206)
         Me.pctBolillero2.Name = "pctBolillero2"
         Me.pctBolillero2.Size = New System.Drawing.Size(300, 300)
         Me.pctBolillero2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -658,7 +658,7 @@ Partial Class grillaSorteo
         'pctBolillero3
         '
         Me.pctBolillero3.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.pctBolillero3.Location = New System.Drawing.Point(666, 206)
+        Me.pctBolillero3.Location = New System.Drawing.Point(696, 206)
         Me.pctBolillero3.Name = "pctBolillero3"
         Me.pctBolillero3.Size = New System.Drawing.Size(300, 300)
         Me.pctBolillero3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -668,7 +668,7 @@ Partial Class grillaSorteo
         'pctBolillero4
         '
         Me.pctBolillero4.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.pctBolillero4.Location = New System.Drawing.Point(969, 206)
+        Me.pctBolillero4.Location = New System.Drawing.Point(1022, 206)
         Me.pctBolillero4.Name = "pctBolillero4"
         Me.pctBolillero4.Size = New System.Drawing.Size(300, 300)
         Me.pctBolillero4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -700,9 +700,9 @@ Partial Class grillaSorteo
         Me.lblFechaHora.BackColor = System.Drawing.Color.Transparent
         Me.lblFechaHora.Font = New System.Drawing.Font("Arial Narrow", 35.0!)
         Me.lblFechaHora.ForeColor = System.Drawing.Color.White
-        Me.lblFechaHora.Location = New System.Drawing.Point(405, 58)
+        Me.lblFechaHora.Location = New System.Drawing.Point(446, 62)
         Me.lblFechaHora.Name = "lblFechaHora"
-        Me.lblFechaHora.Size = New System.Drawing.Size(505, 47)
+        Me.lblFechaHora.Size = New System.Drawing.Size(505, 48)
         Me.lblFechaHora.TabIndex = 63
         Me.lblFechaHora.Text = "fechaHora"
         Me.lblFechaHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -853,7 +853,7 @@ Partial Class grillaSorteo
         '
         Me.pctLogoLotba.BackgroundImage = Global.SorteoQuiniela.My.Resources.Resources.logoLotbaFondoColorHorizontal
         Me.pctLogoLotba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pctLogoLotba.Location = New System.Drawing.Point(916, 0)
+        Me.pctLogoLotba.Location = New System.Drawing.Point(963, 0)
         Me.pctLogoLotba.Name = "pctLogoLotba"
         Me.pctLogoLotba.Size = New System.Drawing.Size(400, 200)
         Me.pctLogoLotba.TabIndex = 78
@@ -863,7 +863,7 @@ Partial Class grillaSorteo
         '
         Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(0, 1)
+        Me.PictureBox3.Location = New System.Drawing.Point(41, 1)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(399, 196)
         Me.PictureBox3.TabIndex = 80
@@ -874,7 +874,7 @@ Partial Class grillaSorteo
         Me.lblDatosSorteo.BackColor = System.Drawing.Color.Transparent
         Me.lblDatosSorteo.Font = New System.Drawing.Font("Arial Narrow", 35.0!)
         Me.lblDatosSorteo.ForeColor = System.Drawing.Color.White
-        Me.lblDatosSorteo.Location = New System.Drawing.Point(405, 6)
+        Me.lblDatosSorteo.Location = New System.Drawing.Point(446, 10)
         Me.lblDatosSorteo.Name = "lblDatosSorteo"
         Me.lblDatosSorteo.Size = New System.Drawing.Size(505, 49)
         Me.lblDatosSorteo.TabIndex = 62
@@ -884,7 +884,7 @@ Partial Class grillaSorteo
         '
         Me.lblModalidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblModalidad.ForeColor = System.Drawing.Color.White
-        Me.lblModalidad.Location = New System.Drawing.Point(415, 112)
+        Me.lblModalidad.Location = New System.Drawing.Point(462, 121)
         Me.lblModalidad.Name = "lblModalidad"
         Me.lblModalidad.Size = New System.Drawing.Size(479, 53)
         Me.lblModalidad.TabIndex = 81

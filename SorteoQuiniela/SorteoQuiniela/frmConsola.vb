@@ -189,10 +189,10 @@ Public Class frmConsola
         grillaSorteo.pctBolillero3.Image = My.Resources.fondo_bolilla
         grillaSorteo.pctBolillero4.Image = My.Resources.fondo_bolilla
 
-        grillaSorteo.PctBolillero1.Location = New Point(34, 206)
-        grillaSorteo.pctBolillero2.Location = New Point(347, 206)
-        grillaSorteo.pctBolillero3.Location = New Point(651, 206)
-        grillaSorteo.pctBolillero4.Location = New Point(954, 206)
+        grillaSorteo.PctBolillero1.Location = New Point(43, 206)
+        grillaSorteo.pctBolillero2.Location = New Point(369, 206)
+        grillaSorteo.pctBolillero3.Location = New Point(696, 206)
+        grillaSorteo.pctBolillero4.Location = New Point(1022, 206)
         'grillaSorteo.PctBolillero0.Location = New Point(408, 56)
 
 
@@ -204,15 +204,15 @@ Public Class frmConsola
 
 
         For index = 1 To 20
-            grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 220)
-            grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 220)
+            grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 120)
+            grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 120)
             grillaSorteo.Controls("TextBox" & index).Visible = False
             grillaSorteo.Controls("lblOrden" & index).Visible = False
 
         Next
         For index = 15 To 0 Step -5
-            grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y + 220)
-            grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y + 220)
+            grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y + 120)
+            grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y + 120)
 
             grillaSorteo.Controls("lblPos" & index).Visible = False
             grillaSorteo.Controls("lblRes" & index).Visible = False
@@ -278,7 +278,7 @@ Public Class frmConsola
         auxUbicacion = "textbox" & Me.Ubicacion.Text
         If Me.Ubicacion.Text > 0 And Me.Ubicacion.Text <= 20 Then
             If grillaSorteo.Controls(auxUbicacion).Text = "" Then
-                grillaSorteo.lblUbicacion.Location = New Point(347, 415)
+                grillaSorteo.lblUbicacion.Location = New Point(347, 506)
                 grillaSorteo.lblUbicacion.Text = "Ubicacion " & Me.Ubicacion.Text
                 grillaSorteo.lblUbicacion.Visible = True
 
@@ -505,13 +505,13 @@ Public Class frmConsola
 
 
             For index = 1 To 20
-                grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y - 220)
-                grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y - 220)
+                grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y - 120)
+                grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y - 120)
                 'grillaSorteo.Controls("LblOrden" & index).Visible = False
             Next
             For index = 15 To 0 Step -5
-                grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y - 220)
-                grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y - 220)
+                grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y - 120)
+                grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y - 120)
 
             Next
             If terminado = True Then
