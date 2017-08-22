@@ -189,10 +189,10 @@ Public Class frmConsola
         grillaSorteo.pctBolillero3.Image = My.Resources.fondo_bolilla
         grillaSorteo.pctBolillero4.Image = My.Resources.fondo_bolilla
 
-        grillaSorteo.PctBolillero1.Location = New Point(86, 93)
-        grillaSorteo.pctBolillero2.Location = New Point(394, 93)
-        grillaSorteo.pctBolillero3.Location = New Point(700, 93)
-        grillaSorteo.pctBolillero4.Location = New Point(1006, 93)
+        grillaSorteo.PctBolillero1.Location = New Point(34, 206)
+        grillaSorteo.pctBolillero2.Location = New Point(347, 206)
+        grillaSorteo.pctBolillero3.Location = New Point(651, 206)
+        grillaSorteo.pctBolillero4.Location = New Point(954, 206)
         'grillaSorteo.PctBolillero0.Location = New Point(408, 56)
 
 
@@ -278,7 +278,7 @@ Public Class frmConsola
         auxUbicacion = "textbox" & Me.Ubicacion.Text
         If Me.Ubicacion.Text > 0 And Me.Ubicacion.Text <= 20 Then
             If grillaSorteo.Controls(auxUbicacion).Text = "" Then
-                grillaSorteo.lblUbicacion.Location = New Point(475, 396)
+                grillaSorteo.lblUbicacion.Location = New Point(347, 415)
                 grillaSorteo.lblUbicacion.Text = "Ubicacion " & Me.Ubicacion.Text
                 grillaSorteo.lblUbicacion.Visible = True
 

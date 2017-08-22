@@ -5,7 +5,7 @@ Public Class grillaSorteo
 
 
     Private Sub grillaSorteo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        escalar1()
+        ' escalar1()
 
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
