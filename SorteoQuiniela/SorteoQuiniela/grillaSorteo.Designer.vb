@@ -70,7 +70,6 @@ Partial Class grillaSorteo
         Me.pctBolillero4 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblUbicacion = New System.Windows.Forms.Label()
-        Me.lblDatosSorteo = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.lblFechaHora = New System.Windows.Forms.Label()
         Me.lblPos0 = New System.Windows.Forms.Label()
@@ -86,6 +85,8 @@ Partial Class grillaSorteo
         Me.lblRepetidos = New System.Windows.Forms.Label()
         Me.pctLogoLotba = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.lblDatosSorteo = New System.Windows.Forms.Label()
+        Me.lblModalidad = New System.Windows.Forms.Label()
         CType(Me.PctBolillero1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctBolillero2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctBolillero3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -637,7 +638,7 @@ Partial Class grillaSorteo
         'PctBolillero1
         '
         Me.PctBolillero1.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.PctBolillero1.Location = New System.Drawing.Point(34, 206)
+        Me.PctBolillero1.Location = New System.Drawing.Point(49, 206)
         Me.PctBolillero1.Name = "PctBolillero1"
         Me.PctBolillero1.Size = New System.Drawing.Size(300, 300)
         Me.PctBolillero1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -647,7 +648,7 @@ Partial Class grillaSorteo
         'pctBolillero2
         '
         Me.pctBolillero2.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.pctBolillero2.Location = New System.Drawing.Point(347, 206)
+        Me.pctBolillero2.Location = New System.Drawing.Point(362, 206)
         Me.pctBolillero2.Name = "pctBolillero2"
         Me.pctBolillero2.Size = New System.Drawing.Size(300, 300)
         Me.pctBolillero2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -657,7 +658,7 @@ Partial Class grillaSorteo
         'pctBolillero3
         '
         Me.pctBolillero3.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.pctBolillero3.Location = New System.Drawing.Point(651, 206)
+        Me.pctBolillero3.Location = New System.Drawing.Point(666, 206)
         Me.pctBolillero3.Name = "pctBolillero3"
         Me.pctBolillero3.Size = New System.Drawing.Size(300, 300)
         Me.pctBolillero3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -667,7 +668,7 @@ Partial Class grillaSorteo
         'pctBolillero4
         '
         Me.pctBolillero4.Image = Global.SorteoQuiniela.My.Resources.Resources.fondo_bolilla
-        Me.pctBolillero4.Location = New System.Drawing.Point(954, 206)
+        Me.pctBolillero4.Location = New System.Drawing.Point(969, 206)
         Me.pctBolillero4.Name = "pctBolillero4"
         Me.pctBolillero4.Size = New System.Drawing.Size(300, 300)
         Me.pctBolillero4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -690,18 +691,6 @@ Partial Class grillaSorteo
         Me.lblUbicacion.Text = "Label1"
         Me.lblUbicacion.Visible = False
         '
-        'lblDatosSorteo
-        '
-        Me.lblDatosSorteo.BackColor = System.Drawing.Color.Transparent
-        Me.lblDatosSorteo.Font = New System.Drawing.Font("Arial Narrow", 20.0!)
-        Me.lblDatosSorteo.ForeColor = System.Drawing.Color.White
-        Me.lblDatosSorteo.Location = New System.Drawing.Point(147, 35)
-        Me.lblDatosSorteo.Name = "lblDatosSorteo"
-        Me.lblDatosSorteo.Size = New System.Drawing.Size(526, 32)
-        Me.lblDatosSorteo.TabIndex = 62
-        Me.lblDatosSorteo.Text = "LOTERIA NACIONAL - "
-        Me.lblDatosSorteo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
         'Timer2
         '
         Me.Timer2.Interval = 1000
@@ -711,12 +700,12 @@ Partial Class grillaSorteo
         Me.lblFechaHora.BackColor = System.Drawing.Color.Transparent
         Me.lblFechaHora.Font = New System.Drawing.Font("Arial Narrow", 20.0!)
         Me.lblFechaHora.ForeColor = System.Drawing.Color.White
-        Me.lblFechaHora.Location = New System.Drawing.Point(674, 35)
+        Me.lblFechaHora.Location = New System.Drawing.Point(405, 56)
         Me.lblFechaHora.Name = "lblFechaHora"
-        Me.lblFechaHora.Size = New System.Drawing.Size(333, 32)
+        Me.lblFechaHora.Size = New System.Drawing.Size(505, 32)
         Me.lblFechaHora.TabIndex = 63
         Me.lblFechaHora.Text = "fechaHora"
-        Me.lblFechaHora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblFechaHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPos0
         '
@@ -864,7 +853,7 @@ Partial Class grillaSorteo
         '
         Me.pctLogoLotba.BackgroundImage = Global.SorteoQuiniela.My.Resources.Resources.logoLotbaFondoColorHorizontal
         Me.pctLogoLotba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pctLogoLotba.Location = New System.Drawing.Point(890, 0)
+        Me.pctLogoLotba.Location = New System.Drawing.Point(916, 0)
         Me.pctLogoLotba.Name = "pctLogoLotba"
         Me.pctLogoLotba.Size = New System.Drawing.Size(400, 200)
         Me.pctLogoLotba.TabIndex = 78
@@ -880,12 +869,35 @@ Partial Class grillaSorteo
         Me.PictureBox3.TabIndex = 80
         Me.PictureBox3.TabStop = False
         '
+        'lblDatosSorteo
+        '
+        Me.lblDatosSorteo.BackColor = System.Drawing.Color.Transparent
+        Me.lblDatosSorteo.Font = New System.Drawing.Font("Arial Narrow", 20.0!)
+        Me.lblDatosSorteo.ForeColor = System.Drawing.Color.White
+        Me.lblDatosSorteo.Location = New System.Drawing.Point(405, 24)
+        Me.lblDatosSorteo.Name = "lblDatosSorteo"
+        Me.lblDatosSorteo.Size = New System.Drawing.Size(505, 32)
+        Me.lblDatosSorteo.TabIndex = 62
+        Me.lblDatosSorteo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblModalidad
+        '
+        Me.lblModalidad.AutoSize = True
+        Me.lblModalidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModalidad.ForeColor = System.Drawing.Color.White
+        Me.lblModalidad.Location = New System.Drawing.Point(581, 97)
+        Me.lblModalidad.Name = "lblModalidad"
+        Me.lblModalidad.Size = New System.Drawing.Size(163, 54)
+        Me.lblModalidad.TabIndex = 81
+        Me.lblModalidad.Text = "Label1"
+        '
         'grillaSorteo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1292, 768)
+        Me.ClientSize = New System.Drawing.Size(1366, 768)
+        Me.Controls.Add(Me.lblModalidad)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.pctLogoLotba)
         Me.Controls.Add(Me.lblRepetidos)
@@ -1008,7 +1020,6 @@ Partial Class grillaSorteo
     Friend WithEvents pctBolillero4 As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents lblUbicacion As Label
-    Friend WithEvents lblDatosSorteo As Label
     Friend WithEvents Timer2 As Timer
     Friend WithEvents lblFechaHora As Label
     Friend WithEvents lblPos0 As Label
@@ -1024,4 +1035,6 @@ Partial Class grillaSorteo
     Friend WithEvents lblRepetidos As Label
     Friend WithEvents pctLogoLotba As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents lblDatosSorteo As Label
+    Friend WithEvents lblModalidad As Label
 End Class
