@@ -71,6 +71,8 @@ Partial Class frmConsola
         Me.txtUbicacionPoceada = New System.Windows.Forms.TextBox()
         Me.txtNumSorteadoPoceada = New System.Windows.Forms.TextBox()
         Me.btnProcesarDatos = New System.Windows.Forms.Button()
+        Me.cboModalidad = New System.Windows.Forms.ComboBox()
+        Me.lblModadlidad = New System.Windows.Forms.Label()
         Me.gbxDatosSorteo.SuspendLayout()
         Me.gbxNumerosSorteados.SuspendLayout()
         Me.gbxLetras.SuspendLayout()
@@ -83,6 +85,8 @@ Partial Class frmConsola
         '
         'gbxDatosSorteo
         '
+        Me.gbxDatosSorteo.Controls.Add(Me.lblModadlidad)
+        Me.gbxDatosSorteo.Controls.Add(Me.cboModalidad)
         Me.gbxDatosSorteo.Controls.Add(Me.btnArchivo)
         Me.gbxDatosSorteo.Controls.Add(Me.dtpFechaSorteo)
         Me.gbxDatosSorteo.Controls.Add(Me.lblFecha)
@@ -126,15 +130,15 @@ Partial Class frmConsola
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(7, 60)
+        Me.TextBox2.Location = New System.Drawing.Point(146, 60)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(350, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(210, 20)
         Me.TextBox2.TabIndex = 25
         '
         'lblFiscaliza
         '
         Me.lblFiscaliza.AutoSize = True
-        Me.lblFiscaliza.Location = New System.Drawing.Point(150, 83)
+        Me.lblFiscaliza.Location = New System.Drawing.Point(226, 82)
         Me.lblFiscaliza.Name = "lblFiscaliza"
         Me.lblFiscaliza.Size = New System.Drawing.Size(47, 13)
         Me.lblFiscaliza.TabIndex = 24
@@ -510,6 +514,24 @@ Partial Class frmConsola
         Me.btnProcesarDatos.Text = "Guardar Como"
         Me.btnProcesarDatos.UseVisualStyleBackColor = True
         '
+        'cboModalidad
+        '
+        Me.cboModalidad.FormattingEnabled = True
+        Me.cboModalidad.Items.AddRange(New Object() {"Primera", "Matutina", "Vespertina", "Nocturna"})
+        Me.cboModalidad.Location = New System.Drawing.Point(7, 60)
+        Me.cboModalidad.Name = "cboModalidad"
+        Me.cboModalidad.Size = New System.Drawing.Size(128, 21)
+        Me.cboModalidad.TabIndex = 29
+        '
+        'lblModadlidad
+        '
+        Me.lblModadlidad.AutoSize = True
+        Me.lblModadlidad.Location = New System.Drawing.Point(45, 82)
+        Me.lblModadlidad.Name = "lblModadlidad"
+        Me.lblModadlidad.Size = New System.Drawing.Size(56, 13)
+        Me.lblModadlidad.TabIndex = 30
+        Me.lblModadlidad.Text = "Modalidad"
+        '
         'frmConsola
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -584,4 +606,6 @@ Partial Class frmConsola
     Friend WithEvents Label5 As Label
     Friend WithEvents txtRepetido As TextBox
     Friend WithEvents btnProcesarDatos As Button
+    Friend WithEvents cboModalidad As ComboBox
+    Friend WithEvents lblModadlidad As Label
 End Class

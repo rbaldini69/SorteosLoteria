@@ -855,7 +855,7 @@ Public Class frmConsola
     End Sub
 
     Private Sub txtNumSorteo_TextChanged(sender As Object, e As EventArgs) Handles txtNumSorteo.TextChanged
-        grillaSorteo.lblDatosSorteo.Text = "L O T E R I A   N A C I O N A L - S O R T E O  N° " _
+        grillaSorteo.lblDatosSorteo.Text = "S O R T E O  N° " _
                & txtNumSorteo.Text
         grillaSorteo.Timer2.Enabled = True
     End Sub
@@ -891,6 +891,12 @@ Public Class frmConsola
     Private Sub txtUnidadPoceada_Enter(sender As Object, e As EventArgs) Handles txtUnidadPoceada.Enter
         Me.txtUnidadPoceada.Text = ""
         Me.txtNumSorteadoPoceada.Text = Me.txtDecenaPoceada.Text
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboModalidad.SelectedIndexChanged
+        grillaSorteo.lblModalidad.Text = Me.cboModalidad.SelectedItem
+
+
     End Sub
 End Class
 

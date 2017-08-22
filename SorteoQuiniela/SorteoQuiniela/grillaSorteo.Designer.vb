@@ -698,11 +698,11 @@ Partial Class grillaSorteo
         'lblFechaHora
         '
         Me.lblFechaHora.BackColor = System.Drawing.Color.Transparent
-        Me.lblFechaHora.Font = New System.Drawing.Font("Arial Narrow", 20.0!)
+        Me.lblFechaHora.Font = New System.Drawing.Font("Arial Narrow", 35.0!)
         Me.lblFechaHora.ForeColor = System.Drawing.Color.White
-        Me.lblFechaHora.Location = New System.Drawing.Point(405, 56)
+        Me.lblFechaHora.Location = New System.Drawing.Point(405, 58)
         Me.lblFechaHora.Name = "lblFechaHora"
-        Me.lblFechaHora.Size = New System.Drawing.Size(505, 32)
+        Me.lblFechaHora.Size = New System.Drawing.Size(505, 47)
         Me.lblFechaHora.TabIndex = 63
         Me.lblFechaHora.Text = "fechaHora"
         Me.lblFechaHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -872,24 +872,24 @@ Partial Class grillaSorteo
         'lblDatosSorteo
         '
         Me.lblDatosSorteo.BackColor = System.Drawing.Color.Transparent
-        Me.lblDatosSorteo.Font = New System.Drawing.Font("Arial Narrow", 20.0!)
+        Me.lblDatosSorteo.Font = New System.Drawing.Font("Arial Narrow", 35.0!)
         Me.lblDatosSorteo.ForeColor = System.Drawing.Color.White
-        Me.lblDatosSorteo.Location = New System.Drawing.Point(405, 24)
+        Me.lblDatosSorteo.Location = New System.Drawing.Point(405, 6)
         Me.lblDatosSorteo.Name = "lblDatosSorteo"
-        Me.lblDatosSorteo.Size = New System.Drawing.Size(505, 32)
+        Me.lblDatosSorteo.Size = New System.Drawing.Size(505, 49)
         Me.lblDatosSorteo.TabIndex = 62
-        Me.lblDatosSorteo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblDatosSorteo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblModalidad
         '
-        Me.lblModalidad.AutoSize = True
         Me.lblModalidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblModalidad.ForeColor = System.Drawing.Color.White
-        Me.lblModalidad.Location = New System.Drawing.Point(581, 97)
+        Me.lblModalidad.Location = New System.Drawing.Point(415, 112)
         Me.lblModalidad.Name = "lblModalidad"
-        Me.lblModalidad.Size = New System.Drawing.Size(163, 54)
+        Me.lblModalidad.Size = New System.Drawing.Size(479, 53)
         Me.lblModalidad.TabIndex = 81
-        Me.lblModalidad.Text = "Label1"
+        Me.lblModalidad.Text = "Modalidad"
+        Me.lblModalidad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'grillaSorteo
         '
@@ -897,14 +897,11 @@ Partial Class grillaSorteo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1366, 768)
-        Me.Controls.Add(Me.lblModalidad)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.pctLogoLotba)
         Me.Controls.Add(Me.lblRepetidos)
         Me.Controls.Add(Me.lblLetras)
         Me.Controls.Add(Me.lblTituloLetras)
-        Me.Controls.Add(Me.lblFechaHora)
-        Me.Controls.Add(Me.lblDatosSorteo)
         Me.Controls.Add(Me.lblOrden20)
         Me.Controls.Add(Me.lblOrden19)
         Me.Controls.Add(Me.lblOrden18)
@@ -958,6 +955,9 @@ Partial Class grillaSorteo
         Me.Controls.Add(Me.pctBolillero2)
         Me.Controls.Add(Me.pctBolillero3)
         Me.Controls.Add(Me.pctBolillero4)
+        Me.Controls.Add(Me.lblModalidad)
+        Me.Controls.Add(Me.lblFechaHora)
+        Me.Controls.Add(Me.lblDatosSorteo)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
