@@ -861,7 +861,11 @@ Partial Class grillaSorteo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(240, Byte), Integer))
+
         Me.ClientSize = New System.Drawing.Size(1292, 833)
+
+        Me.ClientSize = New System.Drawing.Size(1366, 768)
+
         Me.Controls.Add(Me.lblRepetidos)
         Me.Controls.Add(Me.lblLetras)
         Me.Controls.Add(Me.lblTituloLetras)

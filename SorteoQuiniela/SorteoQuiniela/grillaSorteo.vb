@@ -1,7 +1,6 @@
 ﻿Imports System
 Imports System.Runtime.InteropServices
 Public Class grillaSorteo
-    Public f As SizeF
     Public resolucionCambiada As Boolean = False
 
 
@@ -222,13 +221,12 @@ Public Class grillaSorteo
 
     End Sub
     Sub escalar1()
-
         Dim desktopSize As Size
         desktopSize = System.Windows.Forms.SystemInformation.PrimaryMonitorSize
         Dim height As Integer = desktopSize.Height
         Dim width As Integer = desktopSize.Width
         If height <> 768 And width <> 1366 Then
-            'Dim f As New System.Drawing.SizeF
+            Dim f As New System.Drawing.SizeF
             f.Height = ((100 / 768) * Me.Height) / 100
             f.Width = ((100 / 1366) * Me.Width) / 100
             For Each ctrl As Control In Me.Controls
