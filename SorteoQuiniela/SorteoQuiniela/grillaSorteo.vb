@@ -228,7 +228,7 @@ Public Class grillaSorteo
         desktopSize = System.Windows.Forms.SystemInformation.PrimaryMonitorSize
         Dim height As Integer = desktopSize.Height
         Dim width As Integer = desktopSize.Width
-        If height <> 768 And width <> 1366 Then
+        If height <> 768 Or width <> 1366 Then
             Me.Scale(f)
 
             f.Height = ((100 / 768) * Me.Height) / 100
@@ -237,6 +237,7 @@ Public Class grillaSorteo
                 ctrl.Scale(f)
                 If ctrl.Name = "lblOrden1" Then
                     medidaLabel = New Size(ctrl.Size.Width, ctrl.Size.Height)
+
                 End If
 
                 Try
@@ -247,7 +248,10 @@ Public Class grillaSorteo
             Next
             For Each ctrl2 As Control In Me.Controls
                 If TypeOf (ctrl2) Is TextBox Then
+
+                    ctrl2.AutoSize = False
                     ctrl2.Size = New Size(ctrl2.Width, medidaLabel.Height)
+
                 End If
 
                 'If (TypeOf (ctrl) Is GroupBox) Then 'si el control es un groupbox escalo sus controles internos

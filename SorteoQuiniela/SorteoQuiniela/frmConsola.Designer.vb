@@ -82,7 +82,7 @@ Partial Class frmConsola
         '
         'Timer1
         '
-        Me.Timer1.Interval = 25
+        Me.Timer1.Interval = 80
         '
         'gbxDatosSorteo
         '

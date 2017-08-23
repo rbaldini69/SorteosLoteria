@@ -210,6 +210,7 @@ Public Class frmConsola
             grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 80)
             grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 80)
             grillaSorteo.Controls("TextBox" & index).Visible = False
+            grillaSorteo.Controls("TextBox" & index).ForeColor = Color.FromArgb(19, 51, 151)
             grillaSorteo.Controls("lblOrden" & index).Visible = False
 
         Next

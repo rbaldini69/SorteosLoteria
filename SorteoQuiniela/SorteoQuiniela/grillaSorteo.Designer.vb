@@ -677,6 +677,7 @@ Partial Class grillaSorteo
         '
         'Timer1
         '
+        Me.Timer1.Interval = 500
         '
         'lblUbicacion
         '
@@ -896,7 +897,11 @@ Partial Class grillaSorteo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1164, 768)
+        Me.ClientSize = New System.Drawing.Size(1366, 768)
+        Me.Controls.Add(Me.PctBolillero1)
+        Me.Controls.Add(Me.pctBolillero2)
+        Me.Controls.Add(Me.pctBolillero3)
+        Me.Controls.Add(Me.pctBolillero4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.pctLogoLotba)
         Me.Controls.Add(Me.lblRepetidos)
@@ -951,10 +956,6 @@ Partial Class grillaSorteo
         Me.Controls.Add(Me.lblPos5)
         Me.Controls.Add(Me.lblRes0)
         Me.Controls.Add(Me.lblPos0)
-        Me.Controls.Add(Me.PctBolillero1)
-        Me.Controls.Add(Me.pctBolillero2)
-        Me.Controls.Add(Me.pctBolillero3)
-        Me.Controls.Add(Me.pctBolillero4)
         Me.Controls.Add(Me.lblModalidad)
         Me.Controls.Add(Me.lblFechaHora)
         Me.Controls.Add(Me.lblDatosSorteo)
