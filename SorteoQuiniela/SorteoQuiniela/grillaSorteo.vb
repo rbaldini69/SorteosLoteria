@@ -1,6 +1,7 @@
 ﻿Imports System
 Imports System.Runtime.InteropServices
 Public Class grillaSorteo
+    Public medidaLabel As Size
     Public f As New System.Drawing.SizeF
 
 
@@ -222,30 +223,42 @@ Public Class grillaSorteo
 
     End Sub
     Sub escalar1()
+        Dim medidaLabel As Size
         Dim desktopSize As Size
         desktopSize = System.Windows.Forms.SystemInformation.PrimaryMonitorSize
         Dim height As Integer = desktopSize.Height
         Dim width As Integer = desktopSize.Width
         If height <> 768 And width <> 1366 Then
             Me.Scale(f)
+
             f.Height = ((100 / 768) * Me.Height) / 100
             f.Width = ((100 / 1366) * Me.Width) / 100
             For Each ctrl As Control In Me.Controls
                 ctrl.Scale(f)
+                If ctrl.Name = "lblOrden1" Then
+                    medidaLabel = New Size(ctrl.Size.Width, ctrl.Size.Height)
+                End If
+
                 Try
                     'controlo el error por si no tiene propiedad font
                     ctrl.Font = New Font(ctrl.Font.OriginalFontName, Math.Round(ctrl.Font.Size * Math.Round(f.Width, 2), 0), ctrl.Font.Style, GraphicsUnit.Point)
                 Catch ex As Exception
                 End Try
-                If (TypeOf (ctrl) Is GroupBox) Then 'si el control es un groupbox escalo sus controles internos
-                    For Each ctrlAUX As Control In ctrl.Controls
-                        ctrlAUX.Scale(f)
-                        Try
-                            ctrlAUX.Font = New Font(ctrlAUX.Font.OriginalFontName, ctrlAUX.Font.Size * f.Height, ctrlAUX.Font.Style, GraphicsUnit.Point)
-                        Catch ex As Exception
-                        End Try
-                    Next
+            Next
+            For Each ctrl2 As Control In Me.Controls
+                If TypeOf (ctrl2) Is TextBox Then
+                    ctrl2.Size = New Size(ctrl2.Width, medidaLabel.Height)
                 End If
+
+                'If (TypeOf (ctrl) Is GroupBox) Then 'si el control es un groupbox escalo sus controles internos
+                ' For Each ctrlAUX As Control In ctrl.Controls
+                '  ctrlAUX.Scale(f)
+                '   Try
+                '        ctrlAUX.Font = New Font(ctrlAUX.Font.OriginalFontName, ctrlAUX.Font.Size * f.Height, ctrlAUX.Font.Style, GraphicsUnit.Point)
+                '     Catch ex As Exception
+                '      End Try
+                '   Next
+                'End If
             Next
         End If
     End Sub
