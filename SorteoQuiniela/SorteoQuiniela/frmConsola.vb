@@ -207,19 +207,19 @@ Public Class frmConsola
         grillaSorteo.pctBolillero4.Scale(grillaSorteo.f)
 
         For index = 1 To 20
-            grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 80)
-            grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 80)
-            grillaSorteo.Controls("TextBox" & index).Visible = False
+            grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 390)
+            grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 390)
+            ' grillaSorteo.Controls("TextBox" & index).Visible = False
             grillaSorteo.Controls("TextBox" & index).ForeColor = Color.FromArgb(19, 51, 151)
-            grillaSorteo.Controls("lblOrden" & index).Visible = False
+            'grillaSorteo.Controls("lblOrden" & index).Visible = False
 
         Next
         For index = 15 To 0 Step -5
-            grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y + 80)
-            grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y + 80)
+            grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y + 390)
+            grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y + 390)
 
-            grillaSorteo.Controls("lblPos" & index).Visible = False
-            grillaSorteo.Controls("lblRes" & index).Visible = False
+            'grillaSorteo.Controls("lblPos" & index).Visible = False
+            'grillaSorteo.Controls("lblRes" & index).Visible = False
 
         Next
 
@@ -385,19 +385,19 @@ Public Class frmConsola
 
             Me.gbxNumerosSorteados.Enabled = False
 
-            For index = 1 To 20
+            'For index = 1 To 20
 
-                grillaSorteo.Controls("textbox" & index).Location = New Point(grillaSorteo.Controls("textbox" & index).Location.X - 250, grillaSorteo.Controls("textbox" & index).Location.Y)
-                grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X - 250, grillaSorteo.Controls("lblOrden" & index).Location.Y)
-            Next
-            For index = 15 To 0 Step -5
-                grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X - 250, grillaSorteo.Controls("lblPos" & index).Location.Y)
-                grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X - 250, grillaSorteo.Controls("lblRes" & index).Location.Y)
+            'grillaSorteo.Controls("textbox" & index).Location = New Point(grillaSorteo.Controls("textbox" & index).Location.X - 250, grillaSorteo.Controls("textbox" & index).Location.Y)
+            'grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X - 250, grillaSorteo.Controls("lblOrden" & index).Location.Y)
+            'Next
+            'For index = 15 To 0 Step -5
+            'grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X - 250, grillaSorteo.Controls("lblPos" & index).Location.Y)
+            'grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X - 250, grillaSorteo.Controls("lblRes" & index).Location.Y)
+            '
+            'Next
 
-            Next
-
-            Me.gbxLetras.Visible = True
-            Me.txtLetra1.Focus()
+            ''Me.gbxLetras.Visible = True
+            'Me.txtLetra1.Focus()
         Else
 
         End If
@@ -508,13 +508,13 @@ Public Class frmConsola
 
 
             For index = 1 To 20
-                grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y - 80)
-                grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y - 80)
+                grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y - 390)
+                grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y - 390)
                 'grillaSorteo.Controls("LblOrden" & index).Visible = False
             Next
             For index = 15 To 0 Step -5
-                grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y - 80)
-                grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y - 80)
+                grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y - 390)
+                grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y - 390)
 
             Next
             If terminado = True Then
