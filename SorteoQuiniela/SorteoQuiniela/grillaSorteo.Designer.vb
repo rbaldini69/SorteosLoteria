@@ -855,7 +855,7 @@ Partial Class grillaSorteo
         Me.pctLogoLotba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pctLogoLotba.Location = New System.Drawing.Point(963, 0)
         Me.pctLogoLotba.Name = "pctLogoLotba"
-        Me.pctLogoLotba.Size = New System.Drawing.Size(400, 177)
+        Me.pctLogoLotba.Size = New System.Drawing.Size(400, 200)
         Me.pctLogoLotba.TabIndex = 78
         Me.pctLogoLotba.TabStop = False
         '
@@ -865,7 +865,7 @@ Partial Class grillaSorteo
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox3.Location = New System.Drawing.Point(41, 1)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(399, 173)
+        Me.PictureBox3.Size = New System.Drawing.Size(399, 196)
         Me.PictureBox3.TabIndex = 80
         Me.PictureBox3.TabStop = False
         '
@@ -897,7 +897,7 @@ Partial Class grillaSorteo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1366, 768)
+        Me.ClientSize = New System.Drawing.Size(1284, 768)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.pctLogoLotba)
         Me.Controls.Add(Me.lblModalidad)
