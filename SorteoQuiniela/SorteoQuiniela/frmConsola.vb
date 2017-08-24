@@ -209,7 +209,7 @@ Public Class frmConsola
         For index = 1 To 20
             grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 390)
             grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 390)
-            'grillaSorteo.Controls("TextBox" & index).Visible = False
+            ' grillaSorteo.Controls("TextBox" & index).Visible = False
             grillaSorteo.Controls("TextBox" & index).ForeColor = Color.FromArgb(19, 51, 151)
             'grillaSorteo.Controls("lblOrden" & index).Visible = False
 
@@ -384,26 +384,20 @@ Public Class frmConsola
             'grillaSorteo.pctBolillero4.Visible = False
 
             Me.gbxNumerosSorteados.Enabled = False
-            '***************************************************POCEADA EN SUSPENSO************************************
+
             'For index = 1 To 20
 
-            '    grillaSorteo.Controls("textbox" & index).Location = New Point(grillaSorteo.Controls("textbox" & index).Location.X - 250, grillaSorteo.Controls("textbox" & index).Location.Y)
-            '    grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X - 250, grillaSorteo.Controls("lblOrden" & index).Location.Y)
+            'grillaSorteo.Controls("textbox" & index).Location = New Point(grillaSorteo.Controls("textbox" & index).Location.X - 250, grillaSorteo.Controls("textbox" & index).Location.Y)
+            'grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X - 250, grillaSorteo.Controls("lblOrden" & index).Location.Y)
             'Next
             'For index = 15 To 0 Step -5
-            '    grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X - 250, grillaSorteo.Controls("lblPos" & index).Location.Y)
-            '    grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X - 250, grillaSorteo.Controls("lblRes" & index).Location.Y)
-
+            'grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X - 250, grillaSorteo.Controls("lblPos" & index).Location.Y)
+            'grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X - 250, grillaSorteo.Controls("lblRes" & index).Location.Y)
+            '
             'Next
-            '            Me.gbxLetras.Visible = True
-            '           Me.txtLetra1.Focus()
-            For index = 1 To 20
 
-                grillaSorteo.Controls("textbox" & index).ForeColor = Color.FromArgb(19, 51, 151)
-                grillaSorteo.Controls("lblOrden" & index).ForeColor = Color.FromArgb(19, 51, 151)
-            Next
-
-
+            ''Me.gbxLetras.Visible = True
+            'Me.txtLetra1.Focus()
         Else
 
         End If
@@ -461,7 +455,7 @@ Public Class frmConsola
     End Sub
 
     Private Sub txtNumSorteado_TextChanged(sender As Object, e As EventArgs) Handles txtNumSorteado.TextChanged
-        Dim imgs() As Image = {My.Resources.Bolilla0, My.Resources.Bolilla1, My.Resources.Bolilla2, My.Resources.Bolilla3, My.Resources.Bolilla4, My.Resources.Bolilla5, My.Resources.Bolilla6, My.Resources.Bolilla7, My.Resources.Bolilla8, My.Resources.Bolilla9}
+        Dim imgs() As Image = {My.Resources.Bolilla0, My.Resources.Bolilla1, My.Resources.Bolilla2, My.Resources.Bolilla3, My.Resources.Bolilla4lenta, My.Resources.Bolilla5, My.Resources.Bolilla6, My.Resources.Bolilla7, My.Resources.Bolilla8, My.Resources.Bolilla9}
         Select Case Len(txtNumSorteado.Text)
             Case 1
                 grillaSorteo.PctBolillero1.Image = imgs(Me.txtUdeMil.Text)
