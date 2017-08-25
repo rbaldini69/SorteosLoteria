@@ -207,19 +207,19 @@ Public Class frmConsola
         grillaSorteo.pctBolillero4.Scale(grillaSorteo.f)
 
         For index = 1 To 20
-            grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 390)
-            grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 390)
-            ' grillaSorteo.Controls("TextBox" & index).Visible = False
-            grillaSorteo.Controls("TextBox" & index).ForeColor = Color.FromArgb(19, 51, 151)
-            'grillaSorteo.Controls("lblOrden" & index).Visible = False
+            ''grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 390)
+            ''grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 390)
+            ''' grillaSorteo.Controls("TextBox" & index).Visible = False
+            grillaSorteo.Controls("TextBox" & Index).ForeColor = Color.FromArgb(19, 51, 151)
+            '''grillaSorteo.Controls("lblOrden" & index).Visible = False
 
-        Next
-        For index = 15 To 0 Step -5
-            grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y + 390)
-            grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y + 390)
+            ''Next
+            ''For index = 15 To 0 Step -5
+            ''grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y + 390)
+            ''grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y + 390)
 
-            'grillaSorteo.Controls("lblPos" & index).Visible = False
-            'grillaSorteo.Controls("lblRes" & index).Visible = False
+            '''grillaSorteo.Controls("lblPos" & index).Visible = False
+            ''grillaSorteo.Controls("lblRes" & index).Visible = False
 
         Next
 
@@ -285,7 +285,7 @@ Public Class frmConsola
                 grillaSorteo.lblUbicacion.Text = "Ubicacion " & Me.Ubicacion.Text
                 grillaSorteo.lblUbicacion.Visible = True
 
-                If MessageBox.Show("Ubicacion " & Ubicacion.Text & ": " & txtNumSorteado.Text & "?", "Confirmar", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+                If MessageBox.Show("Ubicacion " & Ubicacion.Text & ": " & txtNumSorteado.Text & "?", "SORTEO LOTBA", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                     grillaSorteo.lblUbicacion.Visible = False
                     grillaSorteo.Controls(auxUbicacion).Text = Me.txtNumSorteado.Text
                     Me.distanciax1 = ((grillaSorteo.Controls(auxUbicacion).Location.X + 50 - (grillaSorteo.PctBolillero1.Location.X)) / 30)
@@ -319,7 +319,7 @@ Public Class frmConsola
                 End If
             Else
                 grillaSorteo.lblUbicacion.Text = "Correccion Ubicacion " & Me.Ubicacion.Text
-                If MessageBox.Show("ya existe el sorteo para la ubicacion seleccionada - reemplazar?", "Error. Duplicado", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+                If MessageBox.Show("ya existe el sorteo para la ubicacion seleccionada - reemplazar?", "SORTEO LOTBA", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                     Me.distanciax1 = ((grillaSorteo.Controls(auxUbicacion).Location.X + 50 - (grillaSorteo.PctBolillero1.Location.X)) / 30)
                     Me.distanciay1 = ((grillaSorteo.Controls(auxUbicacion).Location.Y + 25 - (grillaSorteo.PctBolillero1.Location.Y)) / 30)
                     Me.distanciax2 = ((grillaSorteo.Controls(auxUbicacion).Location.X + 50 - (grillaSorteo.pctBolillero2.Location.X)) / 30)
@@ -455,7 +455,7 @@ Public Class frmConsola
     End Sub
 
     Private Sub txtNumSorteado_TextChanged(sender As Object, e As EventArgs) Handles txtNumSorteado.TextChanged
-        Dim imgs() As Image = {My.Resources.Bolilla0, My.Resources.Bolilla1, My.Resources.Bolilla2, My.Resources.Bolilla3, My.Resources.Bolilla4lenta, My.Resources.Bolilla5, My.Resources.Bolilla6, My.Resources.Bolilla7, My.Resources.Bolilla8, My.Resources.Bolilla9}
+        Dim imgs() As Image = {My.Resources.Bolilla0, My.Resources.Bolilla1, My.Resources.Bolilla2, My.Resources.Bolilla3, My.Resources.Bolilla4, My.Resources.Bolilla5, My.Resources.Bolilla6, My.Resources.Bolilla7, My.Resources.Bolilla8, My.Resources.Bolilla9}
         Select Case Len(txtNumSorteado.Text)
             Case 1
                 grillaSorteo.PctBolillero1.Image = imgs(Me.txtUdeMil.Text)
@@ -507,20 +507,20 @@ Public Class frmConsola
             ' NuevaExtraccion()
 
 
-            For index = 1 To 20
-                grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y - 390)
-                grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y - 390)
-                'grillaSorteo.Controls("LblOrden" & index).Visible = False
-            Next
-            For index = 15 To 0 Step -5
-                grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y - 390)
-                grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y - 390)
-
-            Next
+            '  For index = 1 To 20
+            '  grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y - 390)
+            '  grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y - 390)
+            '  'grillaSorteo.Controls("LblOrden" & index).Visible = False
+            '  Next
+            '  For index = 15 To 0 Step -5
+            '  grillaSorteo.Controls("lblPos" & index).Location = New Point(grillaSorteo.Controls("lblPos" & index).Location.X, grillaSorteo.Controls("lblPos" & index).Location.Y - 390)
+            '  grillaSorteo.Controls("lblRes" & index).Location = New Point(grillaSorteo.Controls("lblRes" & index).Location.X, grillaSorteo.Controls("lblRes" & index).Location.Y - 390)
+            '
+            '            Next
             If terminado = True Then
                 Exit Sub
             Else
-                MessageBox.Show("Continuar!", "", MessageBoxButtons.OK)
+                MessageBox.Show("Continuar!", "SORTEO LOTBA", MessageBoxButtons.OK)
 
                 NuevaExtraccion()
             End If
@@ -582,7 +582,7 @@ Public Class frmConsola
                 End If
             Next
         Catch excepcion As Exception
-            MsgBox("se produjo un error " & excepcion.Message)
+            MsgBox("se produjo un error " & excepcion.Message,, "SORTEO LOTBA")
         End Try
 
     End Sub
@@ -657,7 +657,7 @@ Public Class frmConsola
             escritor1.Write("LETRAS" & vbCrLf)
             escritor1.Write(txtLetra1.Text & " - " & txtLetra2.Text & " - " & txtLetra3.Text & " - " & txtLetra4.Text & vbCrLf)
         End Using
-        If MessageBox.Show("Continuar??", "Continuar Sorteos", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+        If MessageBox.Show("Continuar??", "SORTEO LOTBA", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
             'grillaSorteo.lblLetras.Location = New Point(grillaSorteo.lblLetras.Location.X - 320, grillaSorteo.lblLetras.Location.Y - 50)
             'grillaSorteo.IsMdiContainer = True
             grillaSorteo.lblTituloLetras.Location = New Point(grillaSorteo.lblTituloLetras.Location.X - 250, grillaSorteo.lblTituloLetras.Location.Y - 70)
@@ -753,7 +753,7 @@ Public Class frmConsola
             If MessageBox.Show("Ubicacion: " & Me.txtUbicacionPoceada.Text & ": " & txtNumSorteadoPoceada.Text, "CONFIRMA!", MessageBoxButtons.OKCancel) = DialogResult.OK Then
                 For index = 0 To arrayTempPoseada.GetUpperBound(0)
                     If StrComp(arrayTempPoseada(index), txtNumSorteadoPoceada.Text) = 0 Then
-                        MessageBox.Show("ya existe el numero sorteado", "SORTEAR NUEVAMENTE")
+                        MessageBox.Show("ya existe el numero sorteado", "SORTEO LOTBA")
 
                         Me.txtDecenaPoceada.Text = ""
                         Me.txtUnidadPoceada.Text = ""
@@ -796,7 +796,7 @@ Public Class frmConsola
                 End If
             End If
         Else
-            MessageBox.Show("Sorteo finalizado", "FIN DEL SORTEO ")
+            MessageBox.Show("Sorteo finalizado", "SORTEO LOTBA ")
         End If
     End Sub
 
@@ -904,6 +904,13 @@ Public Class frmConsola
 
     Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
         InicializarSorteo()
+    End Sub
+
+    Private Sub frmConsola_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If MessageBox.Show("la aplicacion se cerrará", "SORTEO LOTBA", MessageBoxButtons.OKCancel) = DialogResult.OK Then
+            procesamientoDeDatos.Dispose()
+
+        End If
     End Sub
 End Class
 
