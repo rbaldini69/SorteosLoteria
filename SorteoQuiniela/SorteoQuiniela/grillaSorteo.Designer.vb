@@ -645,7 +645,6 @@ Partial Class grillaSorteo
         '
         'lblUbicacion
         '
-        Me.lblUbicacion.AutoSize = True
         Me.lblUbicacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 80.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUbicacion.ForeColor = System.Drawing.Color.White
         Me.lblUbicacion.Location = New System.Drawing.Point(227, 271)
@@ -854,6 +853,10 @@ Partial Class grillaSorteo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1292, 768)
+        Me.Controls.Add(Me.PctBolillero1)
+        Me.Controls.Add(Me.pctBolillero2)
+        Me.Controls.Add(Me.pctBolillero4)
+        Me.Controls.Add(Me.pctBolillero3)
         Me.Controls.Add(Me.lblUbicacion)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.pctLogoLotba)
@@ -911,10 +914,6 @@ Partial Class grillaSorteo
         Me.Controls.Add(Me.lblPos5)
         Me.Controls.Add(Me.lblRes0)
         Me.Controls.Add(Me.lblPos0)
-        Me.Controls.Add(Me.PctBolillero1)
-        Me.Controls.Add(Me.pctBolillero2)
-        Me.Controls.Add(Me.pctBolillero4)
-        Me.Controls.Add(Me.pctBolillero3)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

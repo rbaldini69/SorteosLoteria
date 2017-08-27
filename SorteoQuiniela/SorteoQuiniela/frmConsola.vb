@@ -189,6 +189,12 @@ Public Class frmConsola
         grillaSorteo.pctBolillero3.Image = My.Resources.fondo_bolilla
         grillaSorteo.pctBolillero4.Image = My.Resources.fondo_bolilla
 
+        grillaSorteo.PctBolillero1.Visible = False
+        grillaSorteo.pctBolillero2.Visible = False
+        grillaSorteo.pctBolillero3.Visible = False
+        grillaSorteo.pctBolillero4.Visible = False
+        grillaSorteo.lblUbicacion.Visible = False
+
         grillaSorteo.PctBolillero1.Location = New Point(43, 206)
         grillaSorteo.pctBolillero2.Location = New Point(369, 206)
         grillaSorteo.pctBolillero3.Location = New Point(696, 206)
@@ -210,7 +216,8 @@ Public Class frmConsola
             ''grillaSorteo.Controls("TextBox" & index).Location = New Point(grillaSorteo.Controls("TextBox" & index).Location.X, grillaSorteo.Controls("TextBox" & index).Location.Y + 390)
             ''grillaSorteo.Controls("lblOrden" & index).Location = New Point(grillaSorteo.Controls("lblOrden" & index).Location.X, grillaSorteo.Controls("lblorden" & index).Location.Y + 390)
             ''' grillaSorteo.Controls("TextBox" & index).Visible = False
-            grillaSorteo.Controls("TextBox" & Index).ForeColor = Color.FromArgb(19, 51, 151)
+            grillaSorteo.Controls("TextBox" & index).ForeColor = Color.FromArgb(19, 51, 151)
+
             '''grillaSorteo.Controls("lblOrden" & index).Visible = False
 
             ''Next
@@ -281,9 +288,19 @@ Public Class frmConsola
         auxUbicacion = "textbox" & Me.Ubicacion.Text
         If Me.Ubicacion.Text > 0 And Me.Ubicacion.Text <= 20 Then
             If grillaSorteo.Controls(auxUbicacion).Text = "" Then
-                grillaSorteo.lblUbicacion.Location = New Point(347, 506)
+                grillaSorteo.lblUbicacion.Location = New Point(0, 700)
+                grillaSorteo.lblUbicacion.Width = grillaSorteo.Width
+                grillaSorteo.lblUbicacion.TextAlign = ContentAlignment.MiddleCenter
+
+
+
+
+
+
+
+
                 grillaSorteo.lblUbicacion.Text = "Ubicacion " & Me.Ubicacion.Text
-                grillaSorteo.lblUbicacion.Visible = True
+                'grillaSorteo.lblUbicacion.Visible = True
 
                 If MessageBox.Show("Ubicacion " & Ubicacion.Text & ": " & txtNumSorteado.Text & "?", "SORTEO LOTBA", MessageBoxButtons.YesNo) = DialogResult.Yes Then
                     grillaSorteo.lblUbicacion.Visible = False
@@ -297,7 +314,7 @@ Public Class frmConsola
                     Me.distanciax4 = ((grillaSorteo.Controls(auxUbicacion).Location.X + 50 - (grillaSorteo.pctBolillero4.Location.X)) / 30)
                     Me.distanciay4 = ((grillaSorteo.Controls(auxUbicacion).Location.Y + 25 - (grillaSorteo.pctBolillero4.Location.Y)) / 30)
 
-                    Timer1.Enabled = True
+
                     'Timer2.Enabled = True
 
                     posiciones(CInt(Ubicacion.Text) - 1) = Me.txtNumSorteado.Text
@@ -315,6 +332,8 @@ Public Class frmConsola
 
                     End Using
                     'NuevaExtraccion()
+                Else
+                    Exit Sub
 
                 End If
             Else
@@ -330,7 +349,7 @@ Public Class frmConsola
                     Me.distanciay4 = ((grillaSorteo.Controls(auxUbicacion).Location.Y + 25 - (grillaSorteo.pctBolillero4.Location.Y)) / 30)
 
                     grillaSorteo.Controls(auxUbicacion).Text = Me.txtNumSorteado.Text
-                    Timer1.Enabled = True
+                    'Timer1.Enabled = True
                     'Timer2.Enabled = True
 
                     posiciones(CInt(Ubicacion.Text) - 1) = Me.txtNumSorteado.Text
@@ -361,6 +380,31 @@ Public Class frmConsola
         End If
 
         terminaciones(CInt(Ubicacion.Text) - 1) = Mid(Me.txtNumSorteado.Text, 3)
+        '***************** ASIGNO LOS VALORES DE LAS BOLILLAS SORTEADAS A LOS PICTURES DEL BOLILLERO***********************
+
+        Dim imgs() As Image = {My.Resources.Bolilla0, My.Resources.Bolilla1, My.Resources.Bolilla2, My.Resources.Bolilla3, My.Resources.Bolilla4, My.Resources.Bolilla5, My.Resources.Bolilla6, My.Resources.Bolilla7, My.Resources.Bolilla8, My.Resources.Bolilla9}
+
+
+        grillaSorteo.PctBolillero1.Image = imgs(Me.txtUdeMil.Text)
+
+        grillaSorteo.pctBolillero2.Image = imgs(Me.txtCentena.Text)
+
+        grillaSorteo.pctBolillero3.Image = imgs(Me.txtDecena.Text)
+
+        grillaSorteo.pctBolillero4.Image = imgs(Me.txtUnidad.Text)
+
+
+        grillaSorteo.PctBolillero1.Visible = True
+        grillaSorteo.pctBolillero2.Visible = True
+        grillaSorteo.pctBolillero3.Visible = True
+        grillaSorteo.pctBolillero4.Visible = True
+
+        grillaSorteo.lblUbicacion.Visible = True
+
+        MessageBox.Show("Mostrando en pantalla numeros sorteados!", "SORTEO LOTBA", MessageBoxButtons.OK)
+
+        Timer1.Enabled = True
+
         For index = 1 To 20
             grillaSorteo.Controls("TextBox" & index).Visible = True
             grillaSorteo.Controls("lblOrden" & index).Visible = True
@@ -455,17 +499,17 @@ Public Class frmConsola
     End Sub
 
     Private Sub txtNumSorteado_TextChanged(sender As Object, e As EventArgs) Handles txtNumSorteado.TextChanged
-        Dim imgs() As Image = {My.Resources.Bolilla0, My.Resources.Bolilla1, My.Resources.Bolilla2, My.Resources.Bolilla3, My.Resources.Bolilla4, My.Resources.Bolilla5, My.Resources.Bolilla6, My.Resources.Bolilla7, My.Resources.Bolilla8, My.Resources.Bolilla9}
-        Select Case Len(txtNumSorteado.Text)
-            Case 1
-                grillaSorteo.PctBolillero1.Image = imgs(Me.txtUdeMil.Text)
-            Case 2
-                grillaSorteo.pctBolillero2.Image = imgs(Me.txtCentena.Text)
-            Case 3
-                grillaSorteo.pctBolillero3.Image = imgs(Me.txtDecena.Text)
-            Case 4
-                grillaSorteo.pctBolillero4.Image = imgs(Me.txtUnidad.Text)
-        End Select
+        'Dim imgs() As Image = {My.Resources.Bolilla0, My.Resources.Bolilla1, My.Resources.Bolilla2, My.Resources.Bolilla3, My.Resources.Bolilla4, My.Resources.Bolilla5, My.Resources.Bolilla6, My.Resources.Bolilla7, My.Resources.Bolilla8, My.Resources.Bolilla9}
+        'Select Case Len(txtNumSorteado.Text)
+        '    Case 1
+        '        grillaSorteo.PctBolillero1.Image = imgs(Me.txtUdeMil.Text)
+        '    Case 2
+        '        grillaSorteo.pctBolillero2.Image = imgs(Me.txtCentena.Text)
+        '    Case 3
+        '        grillaSorteo.pctBolillero3.Image = imgs(Me.txtDecena.Text)
+        '    Case 4
+        '        grillaSorteo.pctBolillero4.Image = imgs(Me.txtUnidad.Text)
+        'End Select
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
@@ -622,9 +666,11 @@ Public Class frmConsola
 
     Private Sub frmConsola_Enter(sender As Object, e As EventArgs) Handles MyBase.Enter
 
+
     End Sub
 
     Private Sub frmConsola_KeyPress(sender As Object, e As KeyPressEventArgs) Handles MyBase.KeyPress
+
 
     End Sub
 
@@ -911,6 +957,10 @@ Public Class frmConsola
             procesamientoDeDatos.Dispose()
 
         End If
+    End Sub
+
+    Private Sub frmConsola_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+
     End Sub
 End Class
 
