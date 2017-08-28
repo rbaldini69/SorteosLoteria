@@ -286,11 +286,13 @@ Public Class frmConsola
             guardarArchivoNuevo()
         End If
         auxUbicacion = "textbox" & Me.Ubicacion.Text
+        grillaSorteo.lblUbicacion.Location = New Point(0, 650)
+        grillaSorteo.lblUbicacion.Width = grillaSorteo.Width
+        grillaSorteo.lblUbicacion.TextAlign = ContentAlignment.MiddleCenter
+
         If Me.Ubicacion.Text > 0 And Me.Ubicacion.Text <= 20 Then
             If grillaSorteo.Controls(auxUbicacion).Text = "" Then
-                grillaSorteo.lblUbicacion.Location = New Point(0, 650)
-                grillaSorteo.lblUbicacion.Width = grillaSorteo.Width
-                grillaSorteo.lblUbicacion.TextAlign = ContentAlignment.MiddleCenter
+
 
 
 

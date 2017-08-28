@@ -266,4 +266,28 @@ Public Class grillaSorteo
             Next
         End If
     End Sub
+
+    Private Sub pctBolillero2_Click(sender As Object, e As EventArgs) Handles pctBolillero2.Click
+
+    End Sub
+
+    Private Sub pctBolillero3_Click(sender As Object, e As EventArgs) Handles pctBolillero3.Click
+
+    End Sub
+
+    Private Sub lblUbicacion_Click(sender As Object, e As EventArgs) Handles lblUbicacion.Click
+
+    End Sub
+
+    Private Sub lblPos10_Click(sender As Object, e As EventArgs) Handles lblPos10.Click
+
+    End Sub
+
+    Private Sub lblRes5_Click(sender As Object, e As EventArgs) Handles lblRes5.Click
+
+    End Sub
+
+    Private Sub lblPos5_Click(sender As Object, e As EventArgs) Handles lblPos5.Click
+
+    End Sub
 End Class
